@@ -26,32 +26,13 @@ Bitte teilen Sie dies den Tutoren mit.
 ### Inhalte
 Anhand der Übungen lernt ihr,**wie** ihr praktisch vorgeht. Ihr versteht **warum** eure Lösungen funkionieren und erhaltet eine Übersicht wie **GIS-Systeme** arbeiten. Die Übungen sind als praktische **Hands-On** Sessions gestaltet.
 
-| Datum         | Übung 	| Thema 	|
-|------------   |-------	|-------	|
-| 25.- 27.04.   | [0](https://courses.gistools.geog.uni-heidelberg.de/giscience/gis-einfuehrung/tree/master/exercise_0)  | [Organisatorisches, Einführung](https://courses.gistools.geog.uni-heidelberg.de/giscience/gis-einfuehrung/wikis/home#exercise-0)
-| 02.- 04.05.    | [1](https://courses.gistools.geog.uni-heidelberg.de/giscience/gis-einfuehrung/tree/master/exercise_01) | [Layerkonzept, Attributdaten](https://courses.gistools.geog.uni-heidelberg.de/giscience/gis-einfuehrung/wikis/home#exercise-01)	|
-| 09.- 11.05. 	  | [2](https://courses.gistools.geog.uni-heidelberg.de/giscience/gis-einfuehrung/tree/master/exercise_02) | [Kartenerstellung](https://courses.gistools.geog.uni-heidelberg.de/giscience/gis-einfuehrung/wikis/home#exercise-2) |
-| 16.- 18.05.    | [3](https://courses.gistools.geog.uni-heidelberg.de/giscience/gis-einfuehrung/tree/master/exercise_03) | [Vektor 1](https://courses.gistools.geog.uni-heidelberg.de/giscience/gis-einfuehrung/wikis/home#exercise-3) |
-| 23.- 25.05.    | [4](https://courses.gistools.geog.uni-heidelberg.de/giscience/gis-einfuehrung/tree/master/exercise_04) | [Vektor 2](https://courses.gistools.geog.uni-heidelberg.de/giscience/gis-einfuehrung/wikis/home#exercise-4) |
-| 30.05. - 01.06.    | [5](https://courses.gistools.geog.uni-heidelberg.de/giscience/gis-einfuehrung/tree/master/exercise_05) | [Digitalisieren, Georeferenzieren](https://courses.gistools.geog.uni-heidelberg.de/giscience/gis-einfuehrung/wikis/home#exercise-5)  	| - |
-| 06. - 08.06. | [6](https://courses.gistools.geog.uni-heidelberg.de/giscience/gis-einfuehrung/tree/master/exercise_06) | [Raster](https://courses.gistools.geog.uni-heidelberg.de/giscience/gis-einfuehrung/wikis/home#exercise-6)
-| 13. - 15.06.   	| FREI |       |
-| 20. - 22.06.   	| [7](https://courses.gistools.geog.uni-heidelberg.de/giscience/gis-einfuehrung/tree/master/exercise_07) | [Raster](https://courses.gistools.geog.uni-heidelberg.de/giscience/gis-einfuehrung/wikis/home#exercise-7) |
-| 27. - 29.06.   	| [8](https://courses.gistools.geog.uni-heidelberg.de/giscience/gis-einfuehrung/tree/master/exercise_08) | [Räumliche Interpolation](https://courses.gistools.geog.uni-heidelberg.de/giscience/gis-einfuehrung/wikis/home#exercise-8) |
-| 04. - 06.07.  	| [9](https://courses.gistools.geog.uni-heidelberg.de/giscience/gis-einfuehrung/tree/master/exercise_09)   | [Automatisierung](https://courses.gistools.geog.uni-heidelberg.de/giscience/gis-einfuehrung/wikis/home#exercise-9)	|
-| 11. - 13.07. 	  |       	| Abschlussprojekt  |
-| 18. - 20.07.   	|       	| Abschlussprojekt 	|
-| 25. - 27.07.   	|       	| Abschlussprojekt	|
-
-
-## Abgaben, Abschlussprojekt und Benotung
-| Abgabedatum | Abgabe 	| Thema 	                          | max. Punkte | Gewichtung |
-|------------	|-------	|-------	                          |-------     	|-------	   |
-| 20.05.     	| [1](https://courses.gistools.geog.uni-heidelberg.de/giscience/gis-einfuehrung/-/tree/master/abgabe_01)     	| Kartengestaltung                  | 100         | 10%        |
-| 03.06.     	| [2](https://courses.gistools.geog.uni-heidelberg.de/giscience/gis-einfuehrung/-/tree/master/abgabe_02)     	| Analysen mit Vektordaten         	| 100         | 10%        |
-| 24.06.     	| [3](https://courses.gistools.geog.uni-heidelberg.de/giscience/gis-einfuehrung/-/tree/master/abgabe_03)     	| Digitalisieren, Georeferenzieren  | 100         | 10%        |
-| 08.07.    	| [4](https://courses.gistools.geog.uni-heidelberg.de/giscience/gis-einfuehrung/-/tree/master/abgabe_04)     	| Analysen mit Rasterdaten    	    | 100         | 10%        |
-| 07.08. 	    | [5](https://courses.gistools.geog.uni-heidelberg.de/giscience/gis-einfuehrung/tree/master/abgabe_05_abschlussaufgabe)     	| Abschlussprojekt                 	| 100         | 60%        |
+| Tag | Thema 	                          | max. Punkte | Gewichtung |
+|------------	|-------	                          |-------     	|-------	   |
+| 13.03.     	| Kartengestaltung                  | 100         | 10%        |
+| 14.03.     	| Analysen mit Vektordaten         	| 100         | 10%        |
+| 15.03.     	| Digitalisieren, Georeferenzieren  | 100         | 10%        |
+| 16.03.    	 | Analysen mit Rasterdaten    	    | 100         | 10%        |
+| 17.03. 	    | [Vorbereitung Abschlussprojekt](https://courses.gistools.geog.uni-heidelberg.de/giscience/gis-einfuehrung/tree/master/abgabe_05_abschlussaufgabe)                 	| 100         | 100%        |
 
 Wir werden folgende Bewertungskala verwenden:
 4,0 (50-54%) 3,7 (55-59%) 3,3 (60-64%) 3,0 (65-69%) 2,7 (70-74%) 2,3 (75-79%) 2,0 (80-84%) 1,7 (85-89%) 1,3 (90-94%) 1,0 (95-100%)
