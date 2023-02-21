@@ -1,5 +1,7 @@
 # GIS Einführung
 
+Link zum erstellten GIS Kurs mit Wiki: [GIScience](https://courses.gistools.geog.uni-heidelberg.de/giscience/gis-einfuehrung)
+
 **WICHTIG**
 
 Aufgrund technischer Probleme mit dem Gitlab Wiki kann es vorkommen, dass einige Links nicht funktionieren.
