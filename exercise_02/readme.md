@@ -5,8 +5,8 @@
 * Eine Karte als PDF-Dokument exportieren.
 
 ## Wiki:
-* Vektorsignaturen ([QGIS](https://courses.gistools.geog.uni-heidelberg.de/giscience/gis-einfuehrung/wikis/qgis-Vektorsignaturen))
-* Kartengestaltung ([QGIS](https://courses.gistools.geog.uni-heidelberg.de/giscience/gis-einfuehrung/wikis/qgis-Kartengestaltung))
+* [Vektorsignaturen](https://courses.gistools.geog.uni-heidelberg.de/giscience/gis-einfuehrung/wikis/qgis-Vektorsignaturen)
+* [Kartengestaltung](https://courses.gistools.geog.uni-heidelberg.de/giscience/gis-einfuehrung/wikis/qgis-Kartengestaltung)
 
 ## Daten
 Ladet euch [die Daten herunter](exercise_02_data.zip) und speichert sie auf eurem PC.
