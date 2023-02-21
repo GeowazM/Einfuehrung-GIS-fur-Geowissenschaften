@@ -21,7 +21,7 @@ Ladet euch [die Daten herunter](exercise_01_data.zip) und speichert sie auf eure
 
 ## Aufgaben
 
-1. Öffnet QGIS/ArcGIS und macht euch mit der Benutzeroberfläche vertraut.
+1. Öffnet QGIS und macht euch mit der Benutzeroberfläche vertraut.
 2. Öffnet die oben angegebenen Dateien im GIS. Ladet dazu die Vektor-Layer in euer Programm.
 3. Interagiert mit der Karte und erkundet die Datensätze. Verwendet hierfür das Zoom-Werkzeug und verschiebt die Karte. Beachtet dabei die Statusleiste am unteren Bildschirmrand und wie diese sich verändert. Wie lauten die ungefähren Koordinaten für die Stadt Berlin?
 4.	Macht eucht mit dem Layer-Fenster (*Layer List*) vertraut. Blendet abwechselnd verschiedene Layer ein und aus und verschiebt die Layer in der Hierarchie. Benennt den 2500_NUTS2-Layer sinnvoll um. Beachtet, dass letzteres keine Auswirkung auf die Datenquellen (Dateinamen, Speicherort) hat.
