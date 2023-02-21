@@ -1,0 +1,28 @@
+# Abschlussaufgabe Beispiele
+
+Hier finden Sie Beispiele zur Abschlussaufgabe von Kommiliton_Innen aus vergangenen Semestern.
+
+---
+
+In [Template zur Ausarbeitung](00_Template_Ausarbeitung_Abschlussaufgabe.pdf) sehen Sie beispielhaft wie die Ausarbeitung zur Abschlussaufgabe strukturiert sein soll. Mehr Infos zur Ausarbeitung finden Sie [hier](../readme.md)
+
+---
+
+</br>
+</br>
+
+
+
+| Titel | Link Karte | Link Ausarbeitung |
+|---|---|---|
+| Potentielle Standorte für Geocaches im Umkreis von Bad Dürkheim | [damm_map.pdf](damm_map.pdf) | [damm_report.pdf](damm_report.pdf) |
+| Geeigneter Familien-Wohnort in Heidelberg | [engelbrecht_map.pdf](engelbrecht_map.pdf) | [engelbrecht_report.pdf](engelbrecht_report.pdf) |
+| Entwicklung der Weinanbaulächen bei Landau in der Pfalz | [ferenczy_map.pdf](ferenczy_map.pdf) | [ferenczy_report.pdf](ferenczy_report.pdf) |
+| Baumpolen in Leipzig - Wie groß ist die Belastung für Allergiker | [hegarty_map.pdf](hegarty_map.pdf) | [hegarty_report.pdf](hegarty_report.pdf) |
+| Potentielle Standorte für Berghütten anhand festgelegter Kriterien in Nauders, Österreich | [grosseallermann_map.pdf](grosseallermann_map.pdf) | [grosseallermann_report.pdf](grosseallermann_report.pdf) |
+| Eignung des Wohnraums Heppenheim für Familien mit kleinen Kindern | [karner_map.pdf](karner_map.pdf) | [karner_report.pdf](karner_report.pdf) |
+| Hochwasserrisiko der Hamburger Innenstadt | [laudenbach_map.pdf](laudenbach_map.pdf) | [laudenbach_report.pdf](laudenbach_report.pdf) |
+| Präsenz von _Public Education Deserts_ im Bereich ISCED Level 3 in Detroit | [nusser_map.pdf](nusser_map.pdf) | [nusser_report.pdf](nusser_report.pdf) |
+| Potentielle klimatische Anbauzonen in Baden-Württemberg | [schreiber_map.pdf](schreiber_map.pdf) | [schreiber_report.pdf](schreiber_report.pdf) |
+| Lärmbelastung durch den Straßenverkehr im Wiener Stadtteil Brigittenau | [stetter_map.pdf](stetter_report.pdf) | [stetter_report.pdf](stetter_report.pdf) |
+| Wohnraumanalyse für Studierende in Heidelberg (Baden-Württemberg) | [thoemen_map.pdf](thoemen_map.pdf) | [thoemen_report.pdf](thoemen_report.pdf) |
