@@ -2,10 +2,6 @@
 
 Link zum erstellten GIS Kurs mit Wiki: [GIScience](https://courses.gistools.geog.uni-heidelberg.de/giscience/gis-einfuehrung)
 
-**WICHTIG**
-
-Aufgrund technischer Probleme mit dem Gitlab Wiki kann es vorkommen, dass einige Links nicht funktionieren.
-Bitte teilen Sie dies den Tutoren mit.
 
 ## Lernziele
 * Übertragung von Konzepten aus der Vorlesung in praktische Abläufe
@@ -18,10 +14,12 @@ Bitte teilen Sie dies den Tutoren mit.
 
 ## Überblick über den Ablauf und die Inhalte der Übungen
 ### Ablauf
-* Die Übung wird in GitLab bereitgestellt.
-* Die Inhalte der Übungen sollt ihr euch selbständig erarbeiten. Im [Wiki](https://courses.gistools.geog.uni-heidelberg.de/giscience/gis-einfuehrung/wikis/home-) findet ihr alle nötigen Informationen um Übungsaufgaben sowie Abgaben zu meistern.
-* Nutzt "Issues" in GitLab um Probleme und Fragen zu stellen. Diese werden von den Tutor_innen im Laufe der Woche beantwortet.
-* Am Ende der Erarbeitungsphase gibt es die Möglichkeit in der Übungsgruppe online bisher ungelöste Fragen direkt an eure Tutor_innen zu stellen.
+* Die Übungen werden hier in Github bereitgestellt. 
+* Die Inhalte der Übungen sollt ihr euch selbständig erarbeiten. Im [Wiki](https://courses.gistools.geog.uni-heidelberg.de/giscience/gis-einfuehrung/wikis/home-) findet ihr alle nötigen Informationen um Übungsaufgaben zu meistern. Hier findet ihr Kurzanleitungen, Tipps und Videos. Ein Dankeschön geht hier an die Ersteller:innen der Seite, an die GIScience Group der Uni Heidelberg & das HeiGIT.
+* Aufgrund technischer Probleme mit dem Gitlab Wiki kann es vorkommen, dass einige Links nicht funktionieren (*WICHTIG*).
+* Die Vorlesungsfolien wird euch per Mail zugeschickt.
+* Bei Fragen wendet euch direkt im Kurs oder per Mail (siehe Folien).
+
 
 ### Inhalte
 Anhand der Übungen lernt ihr,**wie** ihr praktisch vorgeht. Ihr versteht **warum** eure Lösungen funkionieren und erhaltet eine Übersicht wie **GIS-Systeme** arbeiten. Die Übungen sind als praktische **Hands-On** Sessions gestaltet.
