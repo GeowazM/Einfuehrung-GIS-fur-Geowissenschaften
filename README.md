@@ -32,10 +32,13 @@ Anhand der Übungen lernt ihr,**wie** ihr praktisch vorgeht. Ihr versteht **waru
 | 16.03.    	 | Analysen mit Rasterdaten    	    | 100         | 10%        |
 | 17.03. 	    | [Vorbereitung Abschlussprojekt](https://courses.gistools.geog.uni-heidelberg.de/giscience/gis-einfuehrung/tree/master/abgabe_05_abschlussaufgabe)                 	| 100         | 100%        |
 
+
+---
+
 Wir werden folgende Bewertungskala verwenden:
 4,0 (50-54%) 3,7 (55-59%) 3,3 (60-64%) 3,0 (65-69%) 2,7 (70-74%) 2,3 (75-79%) 2,0 (80-84%) 1,7 (85-89%) 1,3 (90-94%) 1,0 (95-100%)
 
-Die Abgaben erfolgen ausschließlich in Moodle. (Es ist keine Abgabe per Mail möglich.) Bitte ladet daher alle nötigen Dateien rechtzeitig hoch.
+Die Abgaben erfolgen ausschließlich per Mail. Bitte ladet daher alle nötigen Dateien rechtzeitig hoch.
 
 **WICHTIG:**
 * Sobald das Abschlussprojekt (Abgabe 5) abgeben ist, gilt das als Anmeldung zur Prüfung.
