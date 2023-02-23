@@ -5,9 +5,9 @@
 * Geometrieoperationen nutzen (z.B. die Fläche eines Polygons berechnen).
 
 ## Wiki:
-* Nicht-Räumliche Abfragen ([QGIS](https://courses.gistools.geog.uni-heidelberg.de/giscience/gis-einfuehrung/wikis/qgis-Nicht-Räumliche-Abfragen), [ArcGIS](https://courses.gistools.geog.uni-heidelberg.de/giscience/gis-einfuehrung/wikis/arcgis-Nicht-Räumliche-Abfragen))
-* Räumliche Abfragen ([QGIS](https://courses.gistools.geog.uni-heidelberg.de/giscience/gis-einfuehrung/wikis/qgis-Räumliche-Abfragen), [ArcGIS](https://courses.gistools.geog.uni-heidelberg.de/giscience/gis-einfuehrung/wikis/arcgis-Räumliche-Abfragen))
-* Geometrieoperationen ([QGIS](https://courses.gistools.geog.uni-heidelberg.de/giscience/gis-einfuehrung/wikis/qgis-Geometrieoperationen), [ArcGIS](https://courses.gistools.geog.uni-heidelberg.de/giscience/gis-einfuehrung/wikis/arcgis-Geometrieoperationen))
+* [Nicht-Räumliche Abfragen](https://courses.gistools.geog.uni-heidelberg.de/giscience/gis-einfuehrung/wikis/qgis-Nicht-Räumliche-Abfragen)
+* [Räumliche Abfragen](https://courses.gistools.geog.uni-heidelberg.de/giscience/gis-einfuehrung/wikis/qgis-Räumliche-Abfragen)
+* [Geometrieoperationen](https://courses.gistools.geog.uni-heidelberg.de/giscience/gis-einfuehrung/wikis/qgis-Geometrieoperationen)
 
 ## Daten
 Ladet euch [die Daten herunter](exercise_03_data.zip) und speichert sie auf eurem PC.
@@ -16,7 +16,7 @@ Ladet euch [die Daten herunter](exercise_03_data.zip) und speichert sie auf eure
 
 ## Aufgaben
 
-1. Öffnet die oben angegebenen Dateien im GIS.
+1. Öffnet die oben angegebenen Dateien in QGIS.
 2. Wählt 3 Städte eurer Wahl (manuell) in der Benutzeroberfläche aus. Öffnet nun die Attributtabelle und zeigt nur die Informationen für die ausgewählten Features an. Speichert die ausgewählten Features anschließend in einer neuen Datei (Layer). 
 3. In welcher Einheit liegen die Einwohnerzahlen vor? Dies ist für die folgenden Aufgaben wichtig.
 4. Wählt nun anhand einer Abfrage (automatisch) alle Städte, welche im Jahr 2015 mehr als 15 Millionen Einwohner hatten. Wie viele Städte gibt es, die diese Bedingung erfüllen? Welche Stadt hat die meisten Einwohner?
