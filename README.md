@@ -1,7 +1,5 @@
 # GIS Einführung
 
-Link zum erstellten GIS Kurs mit Wiki: [GIScience](https://courses.gistools.geog.uni-heidelberg.de/giscience/gis-einfuehrung)
-
 
 ## Lernziele
 * Übertragung von Konzepten aus der Vorlesung in praktische Abläufe
