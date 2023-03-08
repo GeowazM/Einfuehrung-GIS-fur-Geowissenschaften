@@ -31,6 +31,10 @@ Du brauchst für dein Projekt eine geologische Karte von Heidelberg. Die einzig 
 
 ![Geologische Karte von Heidelberg](geologische_karte_heidelberg.PNG)
 
+<p align="center">
+     Source: <a href = "http://archiv.ub.uni-heidelberg.de/volltextserver/1662/2/Karte2.pdf"> Quelle </a>
+</p>
+
 1. Versehe das zur Verfügung gestellte Raster mit WGS84 Pseudo-Mercator-Koordinaten (EPSG: 3857).
 2. Verwende als Referenz-Layer eine Webkarten deiner Wahl, welche du in Form einer Hintergrundkarte einbinden kannst.
 3. Wähle eine geeignete Transformationsvorschrift und setzt genügend und ausreichend verteilte Passpunkte.
