@@ -27,7 +27,7 @@ Ladet euch [die Daten herunter](exercise_05_data.zip) und speichert sie auf eure
 
 ### Ein Bild georeferenzieren
 #### Kontext
-Du brauchst für dein Projekt eine geologische Karte von Heidelberg. Die einzig verfügbaren Informationen, die du finden kannst ist eine PDF Karte der Universität Heidelberg. Um diese geologische Karte mit deinen weiteren Geodaten zu kombinieren.
+Du brauchst für dein Projekt eine geologische Karte von Heidelberg. Die einzig verfügbaren Informationen, die du finden kannst ist eine PDF Karte der Universität Heidelberg. Um diese geologische Karte mit deinen weiteren Geodaten zu verknüpfen, müssen wir diese georeferenzieren.
 
 ![Geologische Karte von Heidelberg](geologische_karte_heidelberg.PNG)
 
