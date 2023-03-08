@@ -33,15 +33,8 @@ Anhand der Übungen lernt ihr,**wie** ihr praktisch vorgeht. Ihr versteht **waru
 
 ---
 
-Wir werden folgende Bewertungskala verwenden:
-4,0 (50-54%) 3,7 (55-59%) 3,3 (60-64%) 3,0 (65-69%) 2,7 (70-74%) 2,3 (75-79%) 2,0 (80-84%) 1,7 (85-89%) 1,3 (90-94%) 1,0 (95-100%)
-
 Die Abgaben erfolgen ausschließlich per Mail. Bitte ladet daher alle nötigen Dateien rechtzeitig hoch.
 
 **WICHTIG:**
-* Sobald das Abschlussprojekt (Abgabe 5) abgeben ist, gilt das als Anmeldung zur Prüfung.
-* Die aus der Gesamt-Punktzahl resultierende Note oder ein pot. Fehlversuch wird dann dem Prüfungssekretariat gemeldet.
-* Wenn kein Abschlussprojekt (Abgabe 5) abgegeben wird, verfallen sämtliche in Abgabe 1-4 bereits erreichten Punkte.
-* Ins kommende Semester können keine Bewertungen von Abgaben aus diesem Semester übernommen werden.
-
-Die obenstehenden Prüfungsmodalitäten gelten **nur** für die Übung. Die Prüfungsmodalitäten der Vorlesung bleiben davon unberührt!
+* Die Abgabe des Abschlussprojekts erfolgt ausschließlich per Mail. Achtet darauf, dass ein anderer Nutzer dein QGIS Projekt mit allen Layern öffnen kann. 
+* Die aus der Gesamt-Punktzahl resultierende Note Prüfungssekretariat gemeldet.
