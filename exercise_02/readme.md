@@ -34,4 +34,4 @@ Ladet euch [die Daten herunter](exercise_02_data.zip) und speichert sie auf eure
 
 
 ## So (oder ähnlich) sieht's am Ende aus
-![](nextbike_map.png)
+![](bodenschaetze_bw_map.png)
