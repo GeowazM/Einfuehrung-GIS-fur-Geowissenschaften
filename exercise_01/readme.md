@@ -21,14 +21,14 @@ Ladet euch [die Daten herunter](exercise_01_data.zip) und speichert sie auf eure
 
 ## Aufgaben
 
-1. Öffnet QGIS und macht euch mit der Benutzeroberfläche vertraut.
-2. Öffnet die oben angegebenen Dateien im GIS. Ladet dazu die Vektor-Layer in euer Programm.
-3. Interagiert mit der Karte und erkundet die Datensätze. Verwendet hierfür das Zoom-Werkzeug und verschiebt die Karte. Beachtet dabei die Statusleiste am unteren Bildschirmrand und wie diese sich verändert. Wie lauten die ungefähren Koordinaten für die Stadt Berlin?
-4.	Macht eucht mit dem Layer-Fenster (*Layer List*) vertraut. Blendet abwechselnd verschiedene Layer ein und aus und verschiebt die Layer in der Hierarchie. Benennt den 2500_NUTS2-Layer sinnvoll um. Beachtet, dass letzteres keine Auswirkung auf die Datenquellen (Dateinamen, Speicherort) hat.
-5.	Seht die Attributdaten der Layer ein. Schaut euch zu diesem Zweck die Attributtabelle an und macht euch mit der zugehörigen Nutzeroberfläche vertraut. Wie viele Features gibt es im NUTS1-Layer? Wie viele Einwohner hat Berlin?
-6. Ändert die Projektion in der Kartenansicht zu WGS84 UTM32N (EPSG-Code: 32632). **Beachtet, dass dies nichts an der Projektion (den Koordinaten) der Dateien ändert, sondern lediglich die Projektion der Kartenansicht beeinflusst.** Überprüft dies in den Eigenschaften des Punkt-Layers. Welche Projektion ist dort angegeben?
-7. Speichert nun das Flussnetzwerk-Layer in der Projektion WGS84 UTM 32N. **Dies ändert die Projektion der Datei.** Überprüft dies in den Eigenschaften des neu erstellten Layers.
-8. Speichert euer Projekt ab.
+1. Öffne QGIS und mach dich mit der Benutzeroberfläche vertraut.
+2. Öffne die oben angegebenen Dateien in QGIS. Ladet dazu die Vektor-Layer in euer Programm.
+3. Interagiere mit der Karte und erkunde die Datensätze. Verwende hierfür das Zoom-Werkzeug und verschiebe die Karte. Beachte dabei die Statusleiste am unteren Bildschirmrand und wie diese sich verändert. Wie lauten die ungefähren Koordinaten für Heidelberg?
+4.	Mache dich mit dem Layer-Fenster (*Layer List*) vertraut. Blende abwechselnd verschiedene Layer ein und aus und verschiebe die Layer in der Hierarchie. Benennt den 2500_NUTS2-Layer sinnvoll um. Beachte, dass letzteres keine Auswirkung auf die Datenquellen (Dateinamen, Speicherort) hat.
+5.	Schau dir die Attributdaten der Layer an. Schaue dir zu diesem Zweck die Attributtabelle an und mache dich mit der zugehörigen Nutzeroberfläche vertraut. Wie viele Features gibt es im NUTS1-Layer? Wie viele Einwohner hat Heidelberg?
+6. Ändere die Projektion in der Kartenansicht zu WGS84 UTM32N (EPSG-Code: 32632). **Beachte, dass dies nichts an der Projektion (den Koordinaten) der Dateien ändert, sondern lediglich die Projektion der Kartenansicht beeinflusst.** Überprüfe dies in den Eigenschaften des Punkt-Layers. Welche Projektion ist dort angegeben?
+7. Speichere nun das Flussnetzwerk-Layer in der Projektion WGS84 UTM 32N. **Dies ändert die Projektion der Datei.** Überprüft dies in den Eigenschaften des neu erstellten Layers.
+8. Speichere dein Projekt ab.
 
 ## So (oder ähnlich) sieht's am Ende aus
 ### QGIS
