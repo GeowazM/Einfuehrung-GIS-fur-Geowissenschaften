@@ -29,7 +29,7 @@ Ladet euch [die Daten herunter](exercise_05_data.zip) und speichert sie auf eure
 #### Kontext
 Du brauchst für dein Projekt eine geologische Karte von Heidelberg. Die einzig verfügbaren Informationen, die du finden kannst ist eine PDF Karte der Universität Heidelberg. Um diese geologische Karte mit deinen weiteren Geodaten zu kombinieren.
 
-![Heidelberg_1821](Heidelberg_1821.jpg)
+![Geologische Karte von Heidelberg](geologische_karte_heidelberg.PNG)
 
 1. Versehe das zur Verfügung gestellte Raster mit WGS84 Pseudo-Mercator-Koordinaten (EPSG: 3857).
 2. Verwende als Referenz-Layer eine Webkarten deiner Wahl, welche du in Form einer Hintergrundkarte einbinden kannst.
