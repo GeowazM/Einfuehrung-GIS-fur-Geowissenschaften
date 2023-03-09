@@ -26,14 +26,14 @@ Anhand der Übungen lernt ihr,**wie** ihr praktisch vorgeht. Ihr versteht **waru
 |-------	                          |-------    |
 | 0         	| [Einführung](https://github.com/GeowazM/Einfuehrung-GIS-fur-Geowissenschaften/tree/main/exercise_0)         |
 | 1         	| [Layerkonzept, Attributdaten](https://github.com/GeowazM/Einfuehrung-GIS-fur-Geowissenschaften/tree/main/exercise_01)         |
-| 2         	| [Kartenerstellung](https://github.com/GeowazM/Einfuehrung-GIS-fur-Geowissenschaften/tree/main/exercise_02)         |
-| 3         	| [Vektor 1](https://github.com/GeowazM/Einfuehrung-GIS-fur-Geowissenschaften/tree/main/exercise_03)         |
-| 4         	| [Vektor 2](https://github.com/GeowazM/Einfuehrung-GIS-fur-Geowissenschaften/tree/main/exercise_04)         |
+| 2         	| [Eine Karte erstellen](https://github.com/GeowazM/Einfuehrung-GIS-fur-Geowissenschaften/tree/main/exercise_02)         |
+| 3         	| [Vektor - Mit Attributtabellen arbeiten](https://github.com/GeowazM/Einfuehrung-GIS-fur-Geowissenschaften/tree/main/exercise_03)         |
+| 4         	| [Vektor - Räumliche Abfrage nutzen](https://github.com/GeowazM/Einfuehrung-GIS-fur-Geowissenschaften/tree/main/exercise_04)         |
 | 5         	| [Digitalisieren, Georeferenzieren](https://github.com/GeowazM/Einfuehrung-GIS-fur-Geowissenschaften/tree/main/exercise_05)         |
-| 6         	| [Raster 1](https://github.com/GeowazM/Einfuehrung-GIS-fur-Geowissenschaften/tree/main/exercise_06)         |
-| 7         	| [Raster 2](https://github.com/GeowazM/Einfuehrung-GIS-fur-Geowissenschaften/tree/main/exercise_07)       |
-| 8         	| [Räumliche Interpolation](https://github.com/GeowazM/Einfuehrung-GIS-fur-Geowissenschaften/tree/main/exercise_08)         |
-| 9         	| [Automatisierung](https://github.com/GeowazM/Einfuehrung-GIS-fur-Geowissenschaften/tree/main/exercise_09)         |
+| 6         	| [Raster - Klassifizierung von Landsat-Daten](https://github.com/GeowazM/Einfuehrung-GIS-fur-Geowissenschaften/tree/main/exercise_06)         |
+| 7         	| [Raster - Digitale Geländemodelle nutzen](https://github.com/GeowazM/Einfuehrung-GIS-fur-Geowissenschaften/tree/main/exercise_07)       |
+| 8         	| [Räumliche Interpolation durchführen](https://github.com/GeowazM/Einfuehrung-GIS-fur-Geowissenschaften/tree/main/exercise_08)         |
+| 9         	| [Prozesse automatisieren](https://github.com/GeowazM/Einfuehrung-GIS-fur-Geowissenschaften/tree/main/exercise_09)         |
 |          	| Vorbereitung Abschlussporjekt         |
 
 ---
