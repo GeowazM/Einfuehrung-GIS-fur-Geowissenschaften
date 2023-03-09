@@ -22,30 +22,19 @@
 ### Inhalte
 Anhand der Übungen lernt ihr,**wie** ihr praktisch vorgeht. Ihr versteht **warum** eure Lösungen funkionieren und erhaltet eine Übersicht wie **GIS-Systeme** arbeiten. Die Übungen sind als praktische **Hands-On** Sessions gestaltet.
 
-| Tag | Thema 	                          | max. Punkte | Gewichtung |
-|------------	|-------	                          |-------     	|-------	   |
-| 13.03.     	| [Kartengestaltung](https://github.com/GeowazM/Einfuehrung-GIS-fur-Geowissenschaften/tree/main/exercise_02)                  | 100         | 10%        |
-| 14.03.     	| Analysen mit Vektordaten         	| 100         | 10%        |
-| 15.03.     	| Digitalisieren, Georeferenzieren  | 100         | 10%        |
-| 16.03.    	 | Analysen mit Rasterdaten    	    | 100         | 10%        |
-| 17.03. 	    | [Vorbereitung Abschlussprojekt](https://courses.gistools.geog.uni-heidelberg.de/giscience/gis-einfuehrung/tree/master/abgabe_05_abschlussaufgabe)                 	| 100         | 100%        |
-
-
----
-
-| Tag | Übung 	                          | Thema |
-|------------	|-------	                          |-------    |
-| 1     	| 0         	| Organisatorisches, Einführung         |
-| 1     	| 1         	| Layerkonzept, Attributdaten         |
-| 1     	| 2         	| Kartenerstellung         |
-| 2     	| 3         	| Vektor 1         |
-| 2     	| 4         	| Vektor 2         |
-| 3     	| 5         	| Digitalisieren, Georeferenzieren         |
-| 3     	| 6         	| Raster 1         |
-| 3     	| 7         	| Raster 2       |
-| 4     	| 8         	| Räumliche Interpolation         |
-| 4     	| 9         	| Automatisierung         |
-| 5     	|          	| Vorbereitung Abschlussporjekt         |
+| Übung 	                          | Thema |
+|-------	                          |-------    |
+| 0         	| [Einführung](https://github.com/GeowazM/Einfuehrung-GIS-fur-Geowissenschaften/tree/main/exercise_0)         |
+| 1         	| [Layerkonzept, Attributdaten](https://github.com/GeowazM/Einfuehrung-GIS-fur-Geowissenschaften/tree/main/exercise_01)         |
+| 2         	| [Kartenerstellung](https://github.com/GeowazM/Einfuehrung-GIS-fur-Geowissenschaften/tree/main/exercise_02)         |
+| 3         	| [Vektor 1](https://github.com/GeowazM/Einfuehrung-GIS-fur-Geowissenschaften/tree/main/exercise_03)         |
+| 4         	| [Vektor 2](https://github.com/GeowazM/Einfuehrung-GIS-fur-Geowissenschaften/tree/main/exercise_04)         |
+| 5         	| [Digitalisieren, Georeferenzieren](https://github.com/GeowazM/Einfuehrung-GIS-fur-Geowissenschaften/tree/main/exercise_05)         |
+| 6         	| [Raster 1](https://github.com/GeowazM/Einfuehrung-GIS-fur-Geowissenschaften/tree/main/exercise_06)         |
+| 7         	| [Raster 2](https://github.com/GeowazM/Einfuehrung-GIS-fur-Geowissenschaften/tree/main/exercise_07)       |
+| 8         	| [Räumliche Interpolation](https://github.com/GeowazM/Einfuehrung-GIS-fur-Geowissenschaften/tree/main/exercise_08)         |
+| 9         	| [Automatisierung](https://github.com/GeowazM/Einfuehrung-GIS-fur-Geowissenschaften/tree/main/exercise_09)         |
+|          	| Vorbereitung Abschlussporjekt         |
 
 ---
 
