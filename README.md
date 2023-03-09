@@ -33,6 +33,23 @@ Anhand der Übungen lernt ihr,**wie** ihr praktisch vorgeht. Ihr versteht **waru
 
 ---
 
+| Tag | Übung 	                          | Thema |
+|------------	|-------	                          |-------    |
+| 1     	| 0         	| Organisatorisches, Einführung         |
+| 1     	| 1         	| Layerkonzept, Attributdaten         |
+| 1     	| 2         	| Kartenerstellung         |
+| 2     	| 3         	| Vektor 1         |
+| 2     	| 4         	| Vektor 2         |
+| 3     	| 5         	| Digitalisieren, Georeferenzieren         |
+| 3     	| 6         	| Raster 1         |
+| 3     	| 7         	| Raster 2       |
+| 4     	| 8         	| Räumliche Interpolation         |
+| 4     	| 9         	| Automatisierung         |
+| 5     	|          	| Vorbereitung Abschlussporjekt         |
+
+---
+
+
 Die Abgaben erfolgen ausschließlich per Mail. Bitte ladet daher alle nötigen Dateien rechtzeitig hoch.
 
 **WICHTIG:**
