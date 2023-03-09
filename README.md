@@ -24,7 +24,7 @@ Anhand der Übungen lernt ihr,**wie** ihr praktisch vorgeht. Ihr versteht **waru
 
 | Tag | Thema 	                          | max. Punkte | Gewichtung |
 |------------	|-------	                          |-------     	|-------	   |
-| 13.03.     	| Kartengestaltung                  | 100         | 10%        |
+| 13.03.     	| [Kartengestaltung](https://github.com/GeowazM/Einfuehrung-GIS-fur-Geowissenschaften/tree/main/exercise_02)                  | 100         | 10%        |
 | 14.03.     	| Analysen mit Vektordaten         	| 100         | 10%        |
 | 15.03.     	| Digitalisieren, Georeferenzieren  | 100         | 10%        |
 | 16.03.    	 | Analysen mit Rasterdaten    	    | 100         | 10%        |
