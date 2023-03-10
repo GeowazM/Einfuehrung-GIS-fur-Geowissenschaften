@@ -3,7 +3,7 @@
 * Workflows automatisieren
 
 ## Wiki:
-* Automatisierung ([QGIS](https://courses.gistools.geog.uni-heidelberg.de/giscience/gis-einfuehrung/wikis/qgis-Automatisierung) [ArcGIS](https://courses.gistools.geog.uni-heidelberg.de/giscience/gis-einfuehrung/wikis/arcgis-Automatisierung))
+* [Automatisierung](https://courses.gistools.geog.uni-heidelberg.de/giscience/gis-einfuehrung/wikis/qgis-Automatisierung)
 
 
 ## Daten
