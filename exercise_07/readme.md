@@ -1,5 +1,5 @@
 # Übung 7
-## Ziel der Übung
+## Ziel der Übung.
 * Rasterdaten zuschneiden  
 * Reliefanalysen durchführen
 * zonale Statistiken berechnen
