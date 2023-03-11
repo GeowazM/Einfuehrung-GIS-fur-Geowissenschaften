@@ -1,5 +1,5 @@
 # Übung 6
-## Ziel der Übung.
+## Ziel der Übung
 * Rasterdaten im GIS öffnen und kennenlernen
 * farbliche Darstellung der Rasterwerte anpassen
 * Rasterdaten in Vektordaten umwandeln
