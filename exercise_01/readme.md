@@ -1,6 +1,6 @@
 # Übung 1
 ## Ziel der Übung
-* Die ersten Schritte wagen..
+* Die ersten Schritte wagen.
 * Die Benutzeroberfläche verstehen und das Layer-Konzept kennenlernen.
 * Vektor-Daten in einem GIS anzeigen und die Attributdaten einsehen.
 * Vektor-Daten umprojizieren (d.h. die Projektion der Daten ändern).
