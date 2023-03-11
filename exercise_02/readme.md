@@ -1,6 +1,6 @@
 # Übung 2
 ## Ziel der Übung
-* Eigene Vektorsignaturen gestalten..
+* Eigene Vektorsignaturen gestalten.
 * Eine Karte gestalten und typische Elemente wie Legenden, Nordpfeile und Maßstabsleisten hinzufügen.
 * Eine Karte als PDF-Dokument exportieren.
 
