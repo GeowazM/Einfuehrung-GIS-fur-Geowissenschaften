@@ -1,5 +1,5 @@
 # Übung 3
-## Ziel der Übung
+## Ziel der Übung.
 * Nicht-räumliche Abfragen durchführen.
 * Räumliche Abfragen durchführen.
 * Geometrieoperationen nutzen (z.B. die Fläche eines Polygons berechnen).
