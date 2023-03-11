@@ -2,8 +2,6 @@
 ## Ziel der Übung
 * web-basierte Hintergrundkarten nutzen
 * Vektordaten händisch erstellen (Digitalisieren)
-* Ein Bild Georeferenzieren
-
 
 ## Wiki:
 * [Basemaps](https://courses.gistools.geog.uni-heidelberg.de/giscience/gis-einfuehrung/wikis/qgis-Basemaps)
