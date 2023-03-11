@@ -1,6 +1,6 @@
 # Übung 4
 ## Ziel der Übung
-* Geometriefunktionen vertiefen.
+* Geometriefunktionen vertiefen..
 * Vektordaten räumlich Verschneiden.
 * Räumliche Joins durchführen.
 * Tabellenfunktionen nutzen und einfache Statistiken erstellen.
