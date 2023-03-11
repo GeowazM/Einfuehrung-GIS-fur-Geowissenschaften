@@ -1,5 +1,5 @@
 # Übung 5
-## Ziel der Übung.
+## Ziel der Übung
 * web-basierte Hintergrundkarten nutzen
 * Vektordaten händisch erstellen (Digitalisieren)
 
