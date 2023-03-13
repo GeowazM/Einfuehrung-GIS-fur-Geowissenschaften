@@ -42,4 +42,4 @@ Anhand der Übungen lernt ihr,**wie** ihr praktisch vorgeht. Ihr versteht **waru
 
 **WICHTIG:**
 * Die Abgabe des Abschlussprojekts erfolgt ausschließlich per Mail. Achtet darauf, dass ein anderer Nutzer dein QGIS Projekt mit allen Layern öffnen kann. 
-* Die aus der Gesamt-Punktzahl resultierende Note Prüfungssekretariat gemeldet.
+* Die aus der Gesamt-Punktzahl resultierende Note wird dem Prüfungssekretariat gemeldet.
