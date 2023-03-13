@@ -63,7 +63,3 @@ Der Leser sollte in der Lage sein, die Analyse anhand dieses Dokumentes inhaltli
 ### 5. Dokumentiert euer Vorgehen schriftlich in knapper Form
 * Das Dokument sollte circa 1,500 Wörter umfassen (+- 10%)
 * Die Ausarbeitung ist die Basis für die Bewertung
-
-### 6. Präsentation der Ergebnisse im Kurs:
-* Die Präsentation findet dieses Jahr nicht statt.
-* Die Bewertung basiert ausschließlich auf der Ausarbeitung.
