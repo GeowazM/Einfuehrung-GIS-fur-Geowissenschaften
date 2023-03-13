@@ -1,5 +1,5 @@
 # Übung 5b
-## Ziel der Übung.
+## Ziel der Übung
 * web-basierte Hintergrundkarten nutzen
 * Ein Bild Georeferenzieren
 
