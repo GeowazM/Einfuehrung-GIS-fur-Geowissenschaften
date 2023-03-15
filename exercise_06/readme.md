@@ -23,8 +23,7 @@ Ladet euch [die Daten herunter](exercise_06_data.zip) und speichert sie auf eure
 
 ### Aufgabe 2: Arbeiten mit Geländemodellen
 * Verschafft euch einen Überblick über die Höhenwerte. Was sind die maximalen und minimalen Höhen im Untersuchungsgebiet. Schaut dies in den Layer-Eigenschaften nach.
-* Reklassifiziert das Aster-Höhenmodell in 500 Meter Schritten.
-* Erstellt nun Höhenlinien (Konturlinien) und exportiert diese im Vektorformat.
+* Berechnet aus dem ASTER-Höhenmodell Konturlinien 500 Meter Schritten.
 
 ### Aufgabe 3: Arbeiten mit Landsat-Daten
 * In dieser Aufgabe arbeiten wir mit Daten der Landsat 8 Mission. Wir nutzen nur die Bänder 2-5 in unserer Analyse. Welchen Farben entsprechen diese Bänder?
