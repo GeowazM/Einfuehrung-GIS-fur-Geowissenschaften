@@ -48,3 +48,8 @@ Ladet euch [die Daten herunter](exercise_06_data.zip) und speichert sie auf eure
 * Schaut euch das Modell an, findet eine gute Perspektive und exportiert diese als .png 
 
 
+![3D Landschaft](qgisthreejs.jpg)
+
+<p align="center">
+     Quelle: <a href = "https://qgis2threejs.readthedocs.io/en/docs/_images/top.jpg"> Qthreejs Plugin </a>
+</p>
