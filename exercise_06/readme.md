@@ -47,9 +47,9 @@ Ladet euch [die Daten herunter](exercise_06_data.zip) und speichert sie auf eure
 * Installiert das Plugin *Qgis2threejs*. Startet den *Qgis2threejs Explorer*, aktiviert das SRTM Höhenmodell & das Sentinel-2 Bild. Tipp: Ändere die Überhöhung (exaggeration) in den Scene Settings zu 2.5.
 * Schaut euch das Modell an, findet eine gute Perspektive und exportiert diese als .png 
 
+## So (oder ähnlich) kann es am Ende aussehen
 
 ![3D Landschaft](qgisthreejs.jpg)
 
-<p align="center">
-     Quelle: <a href = "https://qgis2threejs.readthedocs.io/en/docs/_images/top.jpg"> Qthreejs Plugin </a>
-</p>
+
+Quelle: [Qthreejs Plugin](https://qgis2threejs.readthedocs.io/en/docs/_images/top.jpg) 
