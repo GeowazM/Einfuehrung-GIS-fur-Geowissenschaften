@@ -3,7 +3,7 @@ Im Abschlussprojekt sollt ihr eine eigenständige Analyse, inklusive aller notwe
 
 ## Generelle Hinweise
 * Team- oder Gruppenarbeit ist unzulässig und führt zum Nichtbestehen des Übungsblattes.
-*	Die Abgabe erfolgt über die Lernplattform Moodle.
+*	Die Abgabe erfolgt üper Mail.
 *	Es können maximal 100 Punkte erzielt werden.
 *	Lest alle Hinweise, bevor ihr mit der Bearbeitung der Aufgaben beginnt.
 * Zu spät abgebene Aufgaben werden bei der Abschlussaufgabe nicht automatisch mit 0 Punkten bewertet. Für zu spät abgebene Aufgaben werden jedoch auf jeden Fall Punkte abgezogen!
