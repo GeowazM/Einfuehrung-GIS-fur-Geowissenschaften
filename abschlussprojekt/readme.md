@@ -1,5 +1,5 @@
 # Abschlussaufgabe
-Im Abschlussprojekt sollt ihr eine eigenständige Analyse, inklusive aller notwendigen Schritte durchführen. Ihr wählt dafür ein eigenes Thema, sowie die notwendigen Werkzeuge. Die Abgabe erfolgt in Moodle.
+Im Abschlussprojekt sollt ihr eine eigenständige Analyse, inklusive aller notwendigen Schritte durchführen. Ihr wählt dafür ein eigenes Thema, sowie die notwendigen Werkzeuge. Die Abgabe erfolgt per Mail.
 
 ## Generelle Hinweise
 * Team- oder Gruppenarbeit ist unzulässig und führt zum Nichtbestehen des Übungsblattes.
