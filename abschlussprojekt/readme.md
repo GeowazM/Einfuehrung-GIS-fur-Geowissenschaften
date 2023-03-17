@@ -18,14 +18,14 @@ Im Abschlussprojekt sollt ihr eine eigenständige Analyse, inklusive aller notwe
 * Ein PDF mit der finalen Karte
 * Ein PDF mit der finalen Ausarbeitung (1500 Wörter)
 * eure Ergebnisse als Layer und evtl. wichtige Zwischenschritte (die Ausgangsdaten müssen nicht eingereicht werden, denkt aber daran sie im Literaturverzeichnis aufzuführen)
-* Zippt alle obigen Daten zu einem Ordner. (Wir akzeptieren nur `.zip` Dateien und andere Formate können nicht bewertet werden.)
+* Zippt alle obigen Daten zu einem Ordner. (Es werden ausschließlich `.zip` Dateien akzeptiert.)
 
 ## Bewertungskriterien
 Der Leser sollte in der Lage sein, die Analyse anhand dieses Dokumentes inhaltlich nachvollziehen und reproduzieren zu können. Die Bewertung des Abschlussprojekts basiert auf der schriftlichen Ausarbeitung und beinhaltet die folgenden Komponenten:
 
 ### 1. Form (25 Punkte):
 * Sprache (u.a. Sätze sind vollständig, nicht zu lang, verständlich, Rechtschreibung wird eingehalten)
-* korrekte Zitierweise, Quellenangabe und Verweise, Literaturverzeichnis (u.a. Quellen sind angebeben, der Zitierstil ist einheitlich, es gibt ein Literaturverzeichnis)
+* korrekte Zitierweise, Quellenangabe und Verweise, Literaturverzeichnis (u.a. Quellen sind angebeben, der Zitierstil ist einheitlich.
 * korrekte Verwendung, Beschriftung von Tabellen und Abbildungen (u.a. Tabellen und Abbildungen sind beschriftet, haben eine entprechende Auflösung, werden im Text aufgegriffen)
 * Länge (1500 Wörter)
 
@@ -35,10 +35,10 @@ Der Leser sollte in der Lage sein, die Analyse anhand dieses Dokumentes inhaltli
 * Überblick über den Aufbau der Arbeit (u.a. der Aufbau der Arbeit wird vorgestellt)
 
 ### 3. Hauptteil (50 Punkte):
-* Geodatenbeschaffung und -Aufbereitung (u.a. alle genutzten Daten werden genannt und beschrieben, die Quellen der Daten werden genannt, (ArcGIS Online ist keine Datenquelle!))
+* Geodatenbeschaffung und -Aufbereitung (u.a. alle genutzten Daten werden genannt und beschrieben, die Quellen der Daten werden genannt.)
 * Methodik Rasteroperationen (u.a. es werden grundlegende Rasteroperationen korrekt angewandt)
 * Methodik Vektoroperationen (u.a. es werden grundlegende Vektoroperationen korrekt angewandt)
-* Darstellung der Ergebnisse in Karte/Tabelle (u.a. die Ergebnisse werden angemessen (z.B. als Karte oder Tabelle) präsentiert, Karten haben einen Maßstab, Legende etc.)
+* Darstellung der Ergebnisse in Karte/Tabelle (u.a. die Ergebnisse werden angemessen (z.B. als Karte oder Tabelle) präsentiert, Karten haben einen Maßstab, Legende, Nordpfeil, Autor:in, Datenquellen & Datum)
 
 ### 4. Schluss (10 Punkte):
 * Erläuterung der Ergebnisse mit Bezug zur Fragestellung (u.a. Die Ergebnisse werden im Text beschrieben)
