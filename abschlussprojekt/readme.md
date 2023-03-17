@@ -12,7 +12,7 @@ Im Abschlussprojekt sollt ihr eine eigenständige Analyse, inklusive aller notwe
 ## Zur Verfügung stehende Materialien:
 * nutzt das Wiki, hier findet ihr auch eine [Übersicht über Geodatenquellen](https://courses.gistools.geog.uni-heidelberg.de/giscience/gis-einfuehrung/-/wikis/Geodatenbeschaffung).
 * [Strukturvorlage](https://courses.gistools.geog.uni-heidelberg.de/giscience/gis-einfuehrung/-/blob/master/abgabe_05_abschlussaufgabe/Beispiele/00_Template_Ausarbeitung_Abschlussaufgabe.pdf) wie eine Abschlussaufgabe aussehen könnte. (Achtung: Diese Vorlage ist nicht vollständig und dient nur der Orientierung.)
-* Beispielabgaben aus den letzten Jahren findet ihr [hier](Beispiele). Diese Beispiele wurden als gut bis sehr gut bewertet. Es gibt also auch in diesen Arbeiten einige kleinere Schwächen. Als grobe Orientierung können die Beispiele aber ohne Probleme für eure Arbeiten dienen.
+* Beispielabgaben aus den letzten Jahren findet ihr [hier](https://courses.gistools.geog.uni-heidelberg.de/giscience/gis-einfuehrung/-/tree/master/abgabe_05_abschlussaufgabe/Beispiele). Diese Beispiele wurden als gut bis sehr gut bewertet. Es gibt also auch in diesen Arbeiten einige kleinere Schwächen. Als grobe Orientierung können die Beispiele aber ohne Probleme für eure Arbeiten dienen.
 
 ## Abzugeben sind:
 * Ein PDF mit der finalen Karte
