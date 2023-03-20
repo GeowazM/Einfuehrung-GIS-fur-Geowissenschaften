@@ -16,6 +16,6 @@ Ladet euch [die Daten herunter](exercise_05a_data.zip) und speichert sie auf eur
 
 1. Erstellt zwei neue Layer für (a) Häuser und (b) Straßen in Heidelberg.
 2. Fügt zu jedem Layer ein Attribute "Name" hinzu.
-3. Nutzt als Kartierungsgrundlage eine Hintergrundkarte auf Basis von Satellitendaten (z.B. Bing
+3. Nutzt als Kartierungsgrundlage eine Hintergrundkarte auf Basis von Satellitendaten (z.B. Bing, OSM)
 4. Erstelle mindestens 3 Polygone je Layer. Befülle die von dir erstellten Spalten mit Informationen.
 5. Füge zu jedem Feature den passenden Namen und einen Hyperlink hinzu.
