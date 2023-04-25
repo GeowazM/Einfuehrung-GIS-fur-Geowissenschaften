@@ -16,7 +16,7 @@ Im Abschlussprojekt sollt ihr eine eigenständige Analyse, inklusive aller notwe
 
 ## Abzugeben sind:
 * Ein PDF mit der finalen Karte
-* Ein PDF mit der finalen Ausarbeitung (1500 Wörter)
+* Ein PDF mit der finalen Ausarbeitung (ca. 2 Seiten)
 * eure Ergebnisse als Layer und evtl. wichtige Zwischenschritte (die Ausgangsdaten müssen nicht eingereicht werden, denkt aber daran sie im Literaturverzeichnis aufzuführen)
 * Zippt alle obigen Daten zu einem Ordner. (Es werden ausschließlich `.zip` Dateien akzeptiert.)
 
