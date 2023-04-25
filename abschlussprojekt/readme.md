@@ -27,7 +27,7 @@ Der Leser sollte in der Lage sein, die Analyse anhand dieses Dokumentes inhaltli
 * Sprache (u.a. Sätze sind vollständig, nicht zu lang, verständlich, Rechtschreibung wird eingehalten)
 * korrekte Zitierweise, Quellenangabe und Verweise, Literaturverzeichnis (u.a. Quellen sind angebeben, der Zitierstil ist einheitlich.
 * korrekte Verwendung, Beschriftung von Tabellen und Abbildungen (u.a. Tabellen und Abbildungen sind beschriftet, haben eine entprechende Auflösung, werden im Text aufgegriffen)
-* Länge (1500 Wörter)
+* Länge (ca. 2 Seiten)
 
 ### 2. Einleitung (15 Punkte):
 * Relevanz des Themas (u.a. Ein Thema wird aufgegriffen und eingebettet, die Relevanz wird begründet (z.B. anhand von Quellen))
