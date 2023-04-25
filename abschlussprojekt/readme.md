@@ -61,5 +61,5 @@ Der Leser sollte in der Lage sein, die Analyse anhand dieses Dokumentes inhaltli
 * Nutzt Tabellen und Karten zur Veranschaulichung
 
 ### 5. Dokumentiert euer Vorgehen schriftlich in knapper Form
-* Das Dokument sollte circa 1,500 Wörter umfassen (+- 10%)
+* Das Dokument sollte circa 2 Seiten umfassen (+- 10%)
 * Die Ausarbeitung ist die Basis für die Bewertung
