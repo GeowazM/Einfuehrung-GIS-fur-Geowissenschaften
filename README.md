@@ -3,7 +3,7 @@
 
 ## Lernziele
 * Übertragung von Konzepten aus der Vorlesung in praktische Abläufe
-* Betrachtung des kompletten Workflows von GIS-Analysen (EVAP ohne Datenerfassung)
+* Betrachtung des Workflows von GIS-Analysen (EVAP ohne Erhebung)
   * Datenmanagement (V)
   * Datenanalyse (A)
   * Kartenerstellung (P)
