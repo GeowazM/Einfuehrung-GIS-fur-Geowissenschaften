@@ -13,7 +13,7 @@
 ## Überblick über den Ablauf und die Inhalte der Übungen
 ### Ablauf
 * Die Übungen werden hier in Github bereitgestellt. 
-* Die Inhalte der Übungen sollt ihr euch selbständig erarbeiten. Im [Wiki](https://courses.gistools.geog.uni-heidelberg.de/giscience/gis-einfuehrung/wikis/home-) findet ihr alle nötigen Informationen um Übungsaufgaben zu meistern. Hier findet ihr Kurzanleitungen, Tipps und Videos. Ein Dankeschön geht hier an die Ersteller:innen der Seite, an die GIScience Group der Uni Heidelberg & das HeiGIT.
+* Die Inhalte der Übungen sollt ihr euch selbständig erarbeiten. Im [Wiki](https://courses.gistools.geog.uni-heidelberg.de/giscience/gis-einfuehrung/-/wikis/home) findet ihr alle nötigen Informationen um Übungsaufgaben zu meistern. Hier findet ihr Kurzanleitungen, Tipps und Videos. Ein Dankeschön geht hier an die Ersteller:innen der Seite, an die GIScience Group der Uni Heidelberg & das HeiGIT.
 * Beachtet: Aufgrund technischer Probleme mit dem Gitlab Wiki kann es vorkommen, dass einige Links nicht funktionieren.
 * Die Vorlesungsfolien wird euch per Mail zugeschickt.
 * Bei Fragen wendet euch direkt an mich oder schreibt per Mail (siehe Folien).
