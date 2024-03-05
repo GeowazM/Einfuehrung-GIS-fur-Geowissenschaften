@@ -21,7 +21,7 @@ Ladet euch [die Daten herunter](exercise_02_data.zip) und speichert sie auf eure
 2. Wähle für das Punkt-Layer eine passende Signaturen.
 3. Ändere das Koordinatenbezugssystem (Projektion) eurer Ansicht auf ein für Deutschland passenderes.
 6. Erstelle eine neue Druckzusammenstellung. Nutzt das Format A4 (Querformat) für eure Karte.
-7. Stelle einen passenden Maßstab ein (z.B. 1:12000000).
+7. Stelle einen passenden Maßstab ein (z.B. 1:2000000).
 8. Versehe deine Karte mit Nordpfeil und Maßstab (Maßstabsbalken und Numerischen Maßstab).
 9. Füge abschließend Legende, Autor und Datenquelle(n) hinzu.
 10. Speicher deine Karte als PDF.
