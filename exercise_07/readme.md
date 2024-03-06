@@ -20,7 +20,7 @@ Ladet euch [die Daten herunter](exercise_07_data.zip) und speichert sie auf eure
 
 ## Aufgaben
 ### Aufgabe 1: Vorbereitung
-* Bringt die Höhendaten in eine passende metrische Projektion (z.B. UTM37N).
+* Bringt die Höhendaten in eine passende metrische Projektion (z.B. WGS 84 / UTM 37N).
 * Schneidet den Raster-Datensatz auf die Ausdehnung des Nationalpark-Layers zu.
 
 ### Aufgabe 2: Reliefanalysen
