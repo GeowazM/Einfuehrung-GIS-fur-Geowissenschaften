@@ -14,8 +14,8 @@
 
 ## Daten
 Ladet euch [die Daten herunter](exercise_07_data.zip) und speichert sie auf eurem PC. Legt einen lokalen Ordner an und speichert dort die obigen Daten. (.zip Ordner müssen vorher entpackt werden.)
-* Polygon-Layer: national_parks (Quelle: OpenStreetMap and Contributors)
 * Linien-Layer: trails (Quelle: OpenRouteService, OpenStreetMap and Contributors)
+* Polygon-Layer: national_parks (Quelle: OpenStreetMap and Contributors)
 * Raster-Layer: ASTER Höhendaten (Quelle: METI/NASA)
 
 ## Aufgaben
@@ -26,7 +26,7 @@ Ladet euch [die Daten herunter](exercise_07_data.zip) und speichert sie auf eure
 ### Aufgabe 2: Reliefanalysen
 * Berechnet zunächst einen Hillshade für das Geländemodell.
 * Ermittelt die Steigung in °.
-* Erstellt Übersichtsstatistiken für die beiden Nationalparks.
+* Erstellt Übersichtsstatistiken für die beiden Nationalparks (bspw. mit Hilfe von Zonal Statistics).
   * Was ist die maximale Steigung pro Nationalpark?
   * Wie hoch ist die durchschnittliche Steigung pro Nationalpark?
 * Glättet euer Ergebnis in dem ihr pro Pixel den Durchschnitt der 11x11 Nachbarschaft berechnet.
@@ -34,8 +34,9 @@ Ladet euch [die Daten herunter](exercise_07_data.zip) und speichert sie auf eure
 * Konvertiert die Auswahl ins Vektorformat.
 
 ### Aufgabe 3: Höhenprofil
-* erstellt für die Sirimon-Route im trails-Layer ein Höhenprofil.
-* Das Höhenprofil soll auf der x-Achse die Distanz in Meter zeigen, auf der y-Achse die Höhe ü.N.
+* Erstellt für die Sirimon-Route im trails-Layer ein Höhenprofil.
+* Das Höhenprofil soll auf der x-Achse die Distanz in Meter zeigen & auf der y-Achse die Höhe ü.N.
+* Tipp: Achtet auf die einzelnen Schritte des Erklärvideos für das Plugin, was ihr hierfür nutzt. Kleinigkeiten können hier entscheidend sein.
 
 Das könnte dann ungefähr so aussehen:
 ![profile](sirimon_route_profile.png)
