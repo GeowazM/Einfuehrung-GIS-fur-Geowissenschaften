@@ -14,21 +14,22 @@
 * [Lokale Rasteroperationen](https://courses.gistools.geog.uni-heidelberg.de/giscience/gis-einfuehrung/wikis/qgis-Lokale-Funktionen)
 
 ## Daten
-Ladet euch [die Daten herunter](exercise_06_data.zip) und speichert sie auf eurem PC. Legt einen lokalen Ordner an und speichert dort die obigen Daten. (.zip Ordner müssen vorher entpackt werden.)
+Ladet euch vom USB-Stick und speichert sie auf eurem PC. Legt einen lokalen Ordner an und speichert dort die Daten. (.zip Ordner müssen vorher entpackt werden.)
 
-* Sentinel-2 data (Source: [Copernicus](https://scihub.copernicus.eu/))
-* SRTM DEM (Source: [USGS EROS Customer Services](https://www.usgs.gov/centers/eros/science/usgs-eros-archive-digital-elevation-shuttle-radar-topography-mission-srtm-1))
+* Landsat 8 data (Source: Landsat-8 image courtesy of the U.S. Geological Survey; Downloaded via [EarthExplorer](https://earthexplorer.usgs.gov/)
+* ASTER Global Digital Elevation Map (GDEM) SRTM DEM (Source: [NASA JPL](https://asterweb.jpl.nasa.gov/GDEM.asp)
 
 ## Aufgaben
 
 ### Aufgabe 1: Arbeiten mit Geländemodellen
-* Bringt das SRTM-Höhenmodell in eine metrische Projektion (z.B. WGS84/UTM 33N).
+* Verbindet die ASTER-Kacheln miteinander (z.B. mit *merge*).
+* Bringt das ASTER-Höhenmodell in eine metrische Projektion (z.B. WGS84/UTM 33N).
 * Verschafft euch einen Überblick über die Höhenwerte. Was sind die maximalen und minimalen Höhen im Untersuchungsgebiet. Schaut dies in den Layer-Eigenschaften nach. 
-* Berechnet aus dem SRTM-Höhenmodell Konturlinien 100 Meter Schritten. Vergleicht es mit 1 Meter Schritten.
+* Berechnet aus dem ASTER-Höhenmodell Konturlinien 100 Meter Schritten. Vergleicht es mit 1 Meter Schritten.
 * Berechnet ein Hillshade.
 
-### Aufgabe 2: Arbeiten mit Sentinel-2 Daten
-* In dieser Aufgabe arbeiten wir mit Daten der Sentinel-2 Mission. Wir nutzen für unsere Analyse die Bänder 2, 3, 4 & 8. Welchen Farben entsprechen diese Bänder?
+### Aufgabe 2: Arbeiten mit Landsat 8 Daten
+* In dieser Aufgabe arbeiten wir mit Daten des Landsat 8 Satelliten. Wir nutzen für unsere Analyse die Bänder 2, 3, 4 & 5. Welchen Farben entsprechen diese Bänder?
 * Erstellt ein Raster Komposit (bzw. Virtual Raster) aus den gegebenen Bändern.
 * Visualisiert das Komposit in Falschfarben, sodass Vegetation rot erscheint.
 * Berechnet den Normalized Difference Vegetation Index.
@@ -43,8 +44,9 @@ Ladet euch [die Daten herunter](exercise_06_data.zip) und speichert sie auf eure
 | Wald und intensive Landwirtschaft | >0.4 |
 
 ### Aufgabe 3: 3D Visualisierung erstellen
-* Erstellt ein Polygon (Vektordatei), mit dem ihr die Sentinel-2 Daten und das SRTM Höhenmodell verkleinern (clippen) könnt. Ziel ist es ein Untersuchungsgebiet um den Vesuv zu definieren.
-* Installiert das Plugin *Qgis2threejs*. Startet den *Qgis2threejs Explorer*, aktiviert das SRTM Höhenmodell & das Sentinel-2 Bild. Tipp: Ändere die Überhöhung (exaggeration) in den Scene Settings zu 2.5.
+* Erstellt ein Polygon (Vektordatei), mit dem ihr die Landsat-8 Daten und das ASTER-Höhenmodell verkleinern (clippen) könnt. Ziel ist es ein Untersuchungsgebiet um den Vesuv zu definieren.
+* Installiert das Plugin *Qgis2threejs*.
+** Startet den *Qgis2threejs Explorer*, aktiviert das ASTER Höhenmodell & das Landsat-8 Bild. Tipp: Ändere die Überhöhung (exaggeration) in den Scene Settings zu 2.5.
 * Schaut euch das Modell an, findet eine gute Perspektive und exportiert diese als .png 
 
 ## So (oder ähnlich) kann es am Ende aussehen
