@@ -23,7 +23,7 @@ Ladet euch vom USB-Stick und speichert sie auf eurem PC. Legt einen lokalen Ordn
 
 ### Aufgabe 1: Arbeiten mit Geländemodellen
 * Verbindet die ASTER-Kacheln miteinander (z.B. mit *merge*).
-* Bringt das ASTER-Höhenmodell in eine metrische Projektion (z.B. WGS84/UTM 33N).
+* Bringt das ASTER-Höhenmodell in eine metrische Projektion (z.B. WGS84/UTM 37N).
 * Verschafft euch einen Überblick über die Höhenwerte. Was sind die maximalen und minimalen Höhen im Untersuchungsgebiet. Schaut dies in den Layer-Eigenschaften nach. 
 * Berechnet aus dem ASTER-Höhenmodell Konturlinien 100 Meter Schritten. Vergleicht es mit 1 Meter Schritten.
 * Berechnet ein Hillshade (dt. Schummerung).
