@@ -26,9 +26,9 @@ Erstellt ein Modell, welches
 
 ## Aufgabe 2: Modell ausführen
 * nutzt euer Modell um die folgende Parameterkombinationen zu testen
-  * Hotel-Buffer: 100m, Straßen-Buffer: 50m
+  * Hotel-Buffer: 50m, Straßen-Buffer: 50m
   * Hotel-Buffer: 100m, Straßen-Buffer: 100m
-  * Hotel-Buffer: 150m, Straßen-Buffer: 200m
+  * Hotel-Buffer: 150m, Straßen-Buffer: 150m
 
 So oder ähnlich könnte euer finales Modell aussehen:
 ![model](model.PNG)
