@@ -16,8 +16,8 @@ Ladet euch [die Daten herunter](exercise_01b_data.zip) und speichert sie auf eur
 
 
 * Erdbeben (Point) (Quelle: [United State Geological Suvey (USGS)](https://earthquake.usgs.gov/earthquakes/map/?extent=3.86425,-135.08789&extent=61.93895,-54.93164)
-* Plattengrenzen (Linie) (Quelle: (Hugo Ahlenius  )[https://github.com/fraxen/tectonicplates] basierend auf Peter Bird (2003: An updated digital model of plate boundaries, In: Geochemistry, Geophysics, Geosystems 4(3), DOI: doi:10.1029/2001GC000252))
-* Platten (Polygon) (Quelle: (Hugo Ahlenius  )[https://github.com/fraxen/tectonicplates] basierend auf Peter Bird (2003: An updated digital model of plate boundaries, In: Geochemistry, Geophysics, Geosystems 4(3), DOI: doi:10.1029/2001GC000252))
+* Plattengrenzen (Linie) (Quelle: (Hugo Ahlenius)[https://github.com/fraxen/tectonicplates] basierend auf Peter Bird (2003: An updated digital model of plate boundaries, In: Geochemistry, Geophysics, Geosystems 4(3), DOI: doi:10.1029/2001GC000252))
+* Platten (Polygon) (Quelle: (Hugo Ahlenius)[https://github.com/fraxen/tectonicplates] basierend auf Peter Bird (2003: An updated digital model of plate boundaries, In: Geochemistry, Geophysics, Geosystems 4(3), DOI: doi:10.1029/2001GC000252))
 
 
 ## Aufgaben
