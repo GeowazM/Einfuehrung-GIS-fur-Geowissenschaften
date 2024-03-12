@@ -22,12 +22,12 @@ Ladet euch [die Daten herunter](exercise_04_data.zip) und speichert sie auf eure
 ## Aufgaben
 
 ### Datenvorbereitung
-1. Schneidet den Gebäude-Datensatz und den Straßen-Layer auf das Stadtgebiet Osnabrücks zu (Clip).
+1. Schneidet den Gebäude-Datensatz und den Straßen-Layer auf das Stadtgebiet Osnabrücks zu (**Clip** Funktion).
 2. Projiziert anschließend alle Daten in ein metrisches Koordinatensystem.
 
 ### Hochwasserbereich ermitteln
 3. Verbindet alle Teilstücke der Hase zu einer einzelnen Geometrie. Nutzt dazu die **Dissolve** Funktion.
-4. Zur Berechnung der Hochwassergefahr nutzen wir einen vereinfachten Ansatz. Berechnet 3 Stufen der Hochwassergefahr mithilfe der (Multiple)Buffer-Funktion:
+4. Zur Berechnung der Hochwassergefahr nutzen wir einen vereinfachten Ansatz. Berechnet 3 Stufen der Hochwassergefahr mithilfe der **(Multiple)Buffer**-Funktion:
   (a) alle Bereiche in Abstand von maximal 100 m zur Hase,
   (b) alle Bereiche zwischen 100 m und 200 m Abstand,
   (c) alle Bereiche mit einem Abstand von mehr als 200 m bis zu 300 m.
