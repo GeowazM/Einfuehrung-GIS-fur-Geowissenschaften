@@ -26,7 +26,7 @@ Ladet euch [die Daten herunter](exercise_04_data.zip) und speichert sie auf eure
 2. Projiziert anschließend alle Daten in ein metrisches Koordinatensystem.
 
 ### Hochwasserbereich ermitteln
-3. Verbindet alle Teilstücke der Hase zu einer einzelnen Geometrie. Nutzt dazu die Dissolve-Funktion.
+3. Verbindet alle Teilstücke der Hase zu einer einzelnen Geometrie. Nutzt dazu die **Dissolve** Funktion.
 4. Zur Berechnung der Hochwassergefahr nutzen wir einen vereinfachten Ansatz. Berechnet 3 Stufen der Hochwassergefahr mithilfe der (Multiple)Buffer-Funktion:
   (a) alle Bereiche in Abstand von maximal 100 m zur Hase,
   (b) alle Bereiche zwischen 100 m und 200 m Abstand,
@@ -34,7 +34,7 @@ Ladet euch [die Daten herunter](exercise_04_data.zip) und speichert sie auf eure
 * optional: Färbt die Bereiche ensprechend der Hochwassergefahr ein.
 
 ### Gebäude nach Hochwassergefahr einteilen
-5. Fügt zu jedem Gebäude die maximale Hochwassergefahrenklasse (a, b, c) hinzu. Nutzt dafür die Spatial-Join Funktion.
+5. Fügt zu jedem Gebäude die maximale Hochwassergefahrenklasse (a, b, c) hinzu. Nutzt dafür die **Join Attribute by Location** Funktion.
 6. Zählt wie viele Gebäude in jede der drei Klassen vorhanden sind. Erstellt dazu eine kategorisierte Statistik der Attributwerte in Form einer Tabelle und speichert diese.
 * optional: Färbt die Gebäude ensprechend der Hochwassergefahr ein.
 * optional: Visualisiert die Statistik mit einem Balkendiagramm. Nutzt dafür ein Programm eurer Wahl (z.B. Excel).
