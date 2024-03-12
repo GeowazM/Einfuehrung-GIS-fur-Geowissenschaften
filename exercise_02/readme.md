@@ -18,7 +18,7 @@ Ladet euch [die Daten herunter](exercise_02_data.zip) und speichert sie auf eure
 
 ## Aufgaben
 1. Öffne die oben angegebenen Dateien in QGIS.
-2. Wähle für das Punkt-Layer eine passende Signaturen.
+2. Wähle für das Punkt-Layer eine passende Symbologie.
 3. Ändere das Koordinatenbezugssystem (Projektion) eurer Ansicht auf ein für Deutschland passenderes.
 6. Erstelle eine neue Druckzusammenstellung. Nutzt das Format A4 (Querformat) für eure Karte.
 7. Stelle einen passenden Maßstab ein (z.B. 1:2000000).
