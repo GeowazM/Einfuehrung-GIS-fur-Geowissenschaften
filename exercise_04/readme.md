@@ -23,7 +23,7 @@ Ladet euch [die Daten herunter](exercise_04_data.zip) und speichert sie auf eure
 
 ### Datenvorbereitung
 1. Schneidet den Gebäude-Datensatz und den Straßen-Layer auf das Stadtgebiet Osnabrücks zu (**Clip** Funktion).
-2. Projiziert anschließend alle Daten in ein metrisches Koordinatensystem.
+2. Projiziert anschließend alle Daten in ein metrisches Koordinatensystem (z.B. WGS 84 / UTM 32N).
 
 ### Hochwasserbereich ermitteln
 3. Verbindet alle Teilstücke der Hase zu einer einzelnen Geometrie. Nutzt dazu die **Dissolve** Funktion.
