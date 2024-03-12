@@ -35,7 +35,7 @@ Ladet euch [die Daten herunter](exercise_04_data.zip) und speichert sie auf eure
 
 ### Gebäude nach Hochwassergefahr einteilen
 5. Fügt zu jedem Gebäude die maximale Hochwassergefahrenklasse (a, b, c) hinzu. Nutzt dafür die **Join Attribute by Location** Funktion.
-6. Zählt wie viele Gebäude in jede der drei Klassen vorhanden sind. Erstellt dazu eine kategorisierte Statistik der Attributwerte (**Basic statistic for field** Funktion) in Form einer Tabelle und speichert diese.
+6. Zählt wie viele Gebäude in jede der drei Klassen vorhanden sind. Erstellt dazu eine kategorisierte Statistik der Attributwerte (**Statistic by categories** Funktion) in Form einer Tabelle und speichert diese.
 * optional: Färbt die Gebäude ensprechend der Hochwassergefahr ein.
 * optional: Visualisiert die Statistik mit einem Balkendiagramm. Nutzt dafür ein Programm eurer Wahl (z.B. Excel).
 
