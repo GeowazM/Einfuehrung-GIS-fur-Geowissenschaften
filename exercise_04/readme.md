@@ -35,13 +35,13 @@ Ladet euch [die Daten herunter](exercise_04_data.zip) und speichert sie auf eure
 
 ### Gebäude nach Hochwassergefahr einteilen
 5. Fügt zu jedem Gebäude die maximale Hochwassergefahrenklasse (a, b, c) hinzu. Nutzt dafür die **Join Attribute by Location** Funktion.
-6. Zählt wie viele Gebäude in jede der drei Klassen vorhanden sind. Erstellt dazu eine kategorisierte Statistik der Attributwerte in Form einer Tabelle und speichert diese.
+6. Zählt wie viele Gebäude in jede der drei Klassen vorhanden sind. Erstellt dazu eine kategorisierte Statistik der Attributwerte (**Basic statistic for field** Funktion) in Form einer Tabelle und speichert diese.
 * optional: Färbt die Gebäude ensprechend der Hochwassergefahr ein.
 * optional: Visualisiert die Statistik mit einem Balkendiagramm. Nutzt dafür ein Programm eurer Wahl (z.B. Excel).
 
 ### Hochwassergefährdete Bereiche im Straßennetzwerk ausweisen
-7. Verschneidet das Straßennetzwerk mit dem Hochwassergefahr-Layer.
-8. Berechnet anschließend die Länge der neu enstandenen Straßensegmente.
+7. Verschneidet das Straßennetzwerk mit dem Hochwassergefahr-Layer (**Clip**).
+8. Berechnet anschließend die Länge der neu enstandenen Straßensegmente (**$length**).
 9. Auf welcher Gesamtlänge sind die unterschiedlichen Straßentypen möglicherweise von Hochwasser pro Klasse (a, b, c) betroffen? Erstellt dafür eine gruppierte Statistik.
 * optional: Visualisiert die Statistik in einem Balkendiagramm. Nutzt dafür ein Programm eurer Wahl (z.B. Excel).
 
