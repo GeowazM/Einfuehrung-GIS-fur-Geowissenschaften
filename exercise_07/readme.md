@@ -21,17 +21,17 @@ Ladet euch die Daten vom USB-Stick und speichert sie auf eurem PC. Legt einen lo
 ## Aufgaben
 ### Aufgabe 1: Vorbereitung
 * Bringt die Höhendaten in eine passende metrische Projektion (z.B. WGS 84 / UTM 37N).
-* Schneidet den Raster-Datensatz auf die Ausdehnung des Nationalpark-Layers zu.
+* Schneidet (**Clip**) den Raster-Datensatz auf die Ausdehnung des Nationalpark-Layers zu.
 
 ### Aufgabe 2: Reliefanalysen
-* Berechnet zunächst einen Hillshade für das Geländemodell.
-* Ermittelt die Steigung in °.
-* Erstellt Übersichtsstatistiken für die beiden Nationalparks (bspw. mit Hilfe von Zonal Statistics).
-  * Was ist die maximale Steigung pro Nationalpark?
-  * Wie hoch ist die durchschnittliche Steigung pro Nationalpark?
-* Glättet euer Ergebnis in dem ihr pro Pixel den Durchschnitt der 11x11 Nachbarschaft berechnet.
-* Selektiert besonders steile Regionen (>30°) (nutzt dazu zunächst den Raster Calculator oder das Reclassify Tool)
-* Konvertiert die Auswahl ins Vektorformat.
+* Berechnet zunächst einen **Hillshade** für das Geländemodell. Tipp: Nutze die Processing - Toolbox, um Funktionen zu finden.
+* Ermittelt die Hangneigung in ° (via **Slope**).
+* Erstellt Übersichtsstatistiken für die beiden Nationalparks (bspw. mit Hilfe von **Zonal Statistics**).
+  * Was ist die maximale Hangneigung pro Nationalpark?
+  * Wie hoch ist die durchschnittliche Hangneigung pro Nationalpark?
+* Glättet euer Ergebnis in dem ihr pro Pixel den Durchschnitt der 11x11 Nachbarschaft berechnet (via **r.neighbors**).
+* Selektiert besonders steile Regionen (>30°) (nutzt dazu zunächst den Raster Calculator oder das **Reclassify Tool**)
+* Konvertiert die Auswahl ins Vektorformat. Tipp: Du kannst auch das **Basic statistic per field** für die Rasterdatei nutzen.
 
 ### Aufgabe 3: Höhenprofil
 * Erstellt für die Sirimon-Route im trails-Layer ein Höhenprofil.
