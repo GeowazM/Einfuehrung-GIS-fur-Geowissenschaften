@@ -13,7 +13,7 @@
 * [weitere Rasteroperationen](https://courses.gistools.geog.uni-heidelberg.de/giscience/gis-einfuehrung/wikis/qgis-Weitere-Rasterfunktionen)
 
 ## Daten
-Ladet euch [die Daten herunter](exercise_07_data.zip) und speichert sie auf eurem PC. Legt einen lokalen Ordner an und speichert dort die obigen Daten. (.zip Ordner müssen vorher entpackt werden.)
+Ladet euch die Daten vom USB-Stick und speichert sie auf eurem PC. Legt einen lokalen Ordner an und speichert dort die obigen Daten. (.zip Ordner müssen vorher entpackt werden.)
 * Linien-Layer: trails (Quelle: OpenRouteService, OpenStreetMap and Contributors)
 * Polygon-Layer: national_parks (Quelle: OpenStreetMap and Contributors)
 * Raster-Layer: ASTER Höhendaten (Quelle: METI/NASA)
