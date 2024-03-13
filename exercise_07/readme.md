@@ -31,7 +31,7 @@ Ladet euch die Daten vom USB-Stick und speichert sie auf eurem PC. Legt einen lo
   * Wie hoch ist die durchschnittliche Hangneigung pro Nationalpark?
 * Glättet euer Ergebnis in dem ihr pro Pixel den Durchschnitt der 11x11 Nachbarschaft berechnet (via **r.neighbors**).
 * Selektiert besonders steile Regionen (>30°) (nutzt dazu zunächst den Raster Calculator oder das **Reclassify Tool**)
-* Konvertiert die Auswahl ins Vektorformat. Tipp: Du kannst auch das **Basic statistic per field** für die Rasterdatei nutzen.
+* Konvertiert die Auswahl ins Vektorformat (**Conversion - Raster to Vector**). Anschließend kannst du das **Basic statistic per field** nutzen.
 
 ### Aufgabe 3: Höhenprofil
 * Erstellt für die Sirimon-Route im trails-Layer ein Höhenprofil.
