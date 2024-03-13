@@ -22,25 +22,25 @@ Ladet euch vom USB-Stick und speichert sie auf eurem PC. Legt einen lokalen Ordn
 ## Aufgaben
 
 ### Aufgabe 1: Arbeiten mit Geländemodellen
-* Verbindet die ASTER-Kacheln miteinander (z.B. mit *merge*).
+* Verbindet die ASTER-Kacheln (ASTGMT2) miteinander (z.B. mit **merge**).
 * Bringt das ASTER-Höhenmodell in eine metrische Projektion (z.B. WGS84/UTM 37N).
 * Verschafft euch einen Überblick über die Höhenwerte. Was sind die maximalen und minimalen Höhen im Untersuchungsgebiet. Schaut dies in den Layer-Eigenschaften nach. 
-* Berechnet aus dem ASTER-Höhenmodell Konturlinien 100 Meter Schritten. Vergleicht es mit 1 Meter Schritten.
+* Berechnet aus dem ASTER-Höhenmodell Konturlinien 100 Meter Schritten.
 * Berechnet ein Hillshade (dt. Schummerung).
 
 ### Aufgabe 2: Arbeiten mit Landsat 8 Daten
-* In dieser Aufgabe arbeiten wir mit Daten des Landsat 8 Satelliten. Wir nutzen für unsere Analyse die Bänder 2, 3, 4 & 5. Welchen Farben entsprechen diese Bänder?
-* Erstellt ein Raster Komposit (bzw. Virtual Raster) aus den gegebenen Bändern.
-* Visualisiert das Komposit in Falschfarben, sodass Vegetation rot erscheint.
-* Berechnet den Normalized Difference Vegetation Index.
-* Erstellt anschließend NDVI-Klassen. Orientiert euch dabei an folgender Einteilung.
+* In dieser Aufgabe arbeiten wir mit Daten des Landsat 8 Satelliten (*LC08*). Wir nutzen für unsere Analyse die Bänder 2, 3, 4 & 5. Welchen Farben entsprechen diese Bänder?
+* Erstellt ein Raster Komposit (bzw. **Virtual Raster**) aus den gegebenen Bändern.
+* Visualisiert das Komposit in Falschfarben, sodass Vegetation rot erscheint (siehe *Symbology*).
+* Berechnet den Normalized Difference Vegetation Index (bspw. mit dem **Raster Calculator**).
+* Erstellt anschließend NDVI-Klassen (**Reclassify by table**). Orientiert euch dabei an folgender Einteilung.
 
 | Kategorie | NDVI |
 | --- | --- |
 |Wasser und Schnee| < 0 |
 | Felsen, Sand, Gebäude | 0 - 0.2 |
 | Gras, Sträucher | 0.2 - 0.4 |
-| Wald und intensive Landwirtschaft | >0.4 |
+| Wald und intensive Landwirtschaft | > 0.4 |
 
 * Stellt die Klassen farblich sinnvoll dar.
 
