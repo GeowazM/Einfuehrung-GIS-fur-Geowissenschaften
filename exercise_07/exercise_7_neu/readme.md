@@ -50,16 +50,19 @@ Hier eine Übersicht über die Profile, die ihr erstellen könnt.
 
 
 ### Aufgabe 3: Das Relief analysieren und visualisieren
-* Berechnet zunächst eine Schummerung (via **Hillshade**) für das Geländemodell. Tipp: Nutze die Processing - Toolbox, um Funktionen zu finden.
-* Ermittelt die Hangneigung in ° (via **Slope**).
-* Selektiert besonders steile Regionen (>30°) (nutzt dazu das **Reclassify Tool**)
+#### Aufgabe 3a: Visualisieren
+* Berechnet eine Schummerung (via **Hillshade**) für das Geländemodell. Tipp: Nutze die Processing - Toolbox, um Funktionen zu finden.
+* Füge den Wert 0 (schwarze Ränder am Dateirand) den No Data Values hinzu (via *Transparency - Additional...*)
+* Aktiviere den Slope Layer und setze diesen auf 70% (**Transparency - Global Opacity**). Aktiviere nun den DEM.
+* Ermittelt die Hangneigung in ° (via **Slope**). Diese kann eine Visualisierung ebenfalls aufwerten.
 
 
+#### Aufgabe 3b: Analysieren
+* Selektiert besonders steile Regionen (>20°) (nutzt dazu das **Reclassify Tool**)
 * Erstellt Übersichtsstatistiken für die beiden Nationalparks (bspw. mit Hilfe von **Zonal Statistics**).
   * Schaut euch die Werte an. Was zeigen uns die Zahlen?
   * Was ist die maximale Hangneigung pro Nationalpark?
   * Wie hoch ist die durchschnittliche Hangneigung pro Nationalpark?
-* Selektiert besonders steile Regionen (>30°) (nutzt dazu das **Reclassify Tool**)
 * Konvertiert die Auswahl ins Vektorformat (**Conversion - Raster to Vector**). Anschließend kannst du das **Basic statistic per field** nutzen.
 
 
