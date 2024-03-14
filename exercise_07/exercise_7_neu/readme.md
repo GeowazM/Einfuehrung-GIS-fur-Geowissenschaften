@@ -53,7 +53,7 @@ Hier eine Übersicht über die Profile, die ihr erstellen könnt.
 #### Aufgabe 3a: Visualisieren
 * Berechnet eine Schummerung (via **Hillshade**) für das Geländemodell. Tipp: Nutze die Processing - Toolbox, um Funktionen zu finden.
 * Füge den Wert 0 (schwarze Ränder am Dateirand) den No Data Values hinzu (via *Transparency - Additional...*)
-* Aktiviere den Slope Layer und setze diesen auf 70% (**Transparency - Global Opacity**). Aktiviere nun den DEM.
+* Schiebe das Höhenmodell-Layer (DEM) über den Hillshade-Layer und setze die Transparenz des DEMs auf 70% (**Transparency - Global Opacity**). 
 * Ermittelt die Hangneigung in ° (via **Slope**). Diese kann eine Visualisierung ebenfalls aufwerten.
 
 
