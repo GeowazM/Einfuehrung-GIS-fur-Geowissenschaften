@@ -26,22 +26,22 @@ Ladet euch die Daten vom USB-Stick und speichert sie auf eurem PC. Legt einen lo
 
 ### Aufgabe 2: Ein Höhenprofil erstellen
 * Vorsicht: Plugins können etwas undurchsichtig sein. Achtet auf die einzelnen Schritte des Erklärvideos. Kleinigkeiten können hier entscheidend sein.
-* Erstellt für den Transect_1-Layer ein Höhenprofil  (Profil_1a).
+* Erstellt für den Transect_1-Layer ein Höhenprofil  (bspw. Profil_1a).
 * Das Höhenprofil soll auf der x-Achse die Distanz in Meter zeigen & auf der y-Achse die Höhe ü.N.
 * Speichert euer Höhenprofil als PNG ab.
 * Glättet jetzt euer Ergebnis in dem ihr pro Pixel den Durchschnitt der 21x21 Nachbarschaft berechnet (via **r.neighbors**).
-* Erstellt mit Hilfe des Transect_1-Layer nochmals ein Höhenprofil (Profil_1b). Speichert es erneut und vergleicht es mit dem ersten Profil. Was für ein Unterschied ist erkennbar?
-* Jetzt erstelle ein Höhenprofil mit dem Transect_2 Layer und exportiere dies ebenfalls (Profil 2).
+* Erstellt mit Hilfe des Transect_1-Layer nochmals ein Höhenprofil (bspw. Profil_1b). Speichert es erneut und vergleicht es mit dem ersten Profil. Was für ein Unterschied ist erkennbar?
+* Jetzt erstelle ein Höhenprofil mit dem Transect_2 Layer und exportiere dies ebenfalls (bspw. Profil_3).
 * Kreiere eine eigene Linie (**Layer - Create layer**),  visualisiere damit ein Höhenprofil und speichere dies (Profil 3).
 
 
-Hier eine Übersicht über die Profile, die ihr erstellen sollt
-| Vektorlayer | Name | DEM |
+Hier eine Übersicht über die Profile, die ihr erstellen könnt.
+| Vektorlayer | Beispielname | DEM |
 | --- | --- | --- |
-| Transect_1 | Profil 1a | DEM |
-| Transect_1 | Profil 1b | DEM geglättet |
-| Transect_2 | Profil 2 | DEM geglättet |
-| Eigene Linie | Profil 3 | DEM geglättet |
+| Transect_1 | Profil_1a.png | DEM |
+| Transect_1 | Profil_1b.png | DEM geglättet |
+| Transect_2 | Profil_2.png | DEM geglättet |
+| Eigene Linie | Profil_3.png | DEM geglättet |
 
 
 ### Aufgabe 3: Reliefanalysen
