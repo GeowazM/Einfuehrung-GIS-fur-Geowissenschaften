@@ -14,7 +14,7 @@ Lade dir [die Daten herunter](exercise_08_data_new.zip) und speichert sie auf eu
 * Messstationen: [DWD]([https://www.geo.fu-berlin.de/en/v/soga/Geodata-analysis/geostatistics/Data-sets-used/DWD-weather-data-Germany/index.html](https://www.dwd.de/DE/leistungen/cdc/climate-data-center.html;jsessionid=19070115479E2AED22A5D5D622F8CA58.live31083?nn=17626))
 
 ## Aufgaben
-### Aufgabe 1: Vorbereitung
+### Aufgabe 1: Von der Textdatei zu Geodaten
 * Bringe die Daten in ein geeignetes Koordinatensystem (z.B. WGS84/UTM 32N).
 * Importiere die Tabelle in QGIS. Hinweis: Achte auf die Formatierung (engl. vs. dt.)
 
