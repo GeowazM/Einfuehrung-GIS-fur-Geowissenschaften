@@ -1,4 +1,4 @@
-# Übung 7
+# Übung 7b
 ## Ziel der Übung
 * Rasterdaten zuschneiden  
 * Reliefanalysen durchführen
@@ -14,7 +14,7 @@
 
 ## Daten
 Ladet euch die Daten vom USB-Stick und speichert sie auf eurem PC. Legt einen lokalen Ordner an und speichert dort die obigen Daten. (.zip Ordner müssen vorher entpackt werden.)
-* Linien-Layer: Transect_1 & Transect_2
+* Linien-Layer: Transect_1 und Transect_2 (Quelle: Own research)
 * Raster-Layer: SRTM Höhendaten (Quelle: NASA JPL (2013). NASA Shuttle Radar Topography Mission Global 1 arc second. Accessed 2024-03-14 from https://doi.org/10.5067/MEaSUREs/SRTM/SRTMGL1.003 )
 
 ## Aufgaben
