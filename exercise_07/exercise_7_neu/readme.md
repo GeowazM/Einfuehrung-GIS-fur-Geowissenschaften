@@ -35,12 +35,13 @@ Ladet euch die Daten vom USB-Stick und speichert sie auf eurem PC. Legt einen lo
 * Jetzt erstelle ein Höhenprofil mit dem Transect_2 Layer und exportiere dies ebenfalls (Profil 2).
 * Kreiere eine eigene Linie (**Layer - Create layer**),  visualisiere damit ein Höhenprofil und speichere dies (Profil 3).
 
-| Vektorlayer | Name |
-| --- | --- |
-| Transect_1 | Profil 1 |
-| Transect_1 | Profil 2 |
-| Transect_2 | Profil 3 |
-| Eigene Linie | Profil 4 |
+Hier eine Übersicht über die Profile, die ihr erstellen sollt
+| Vektorlayer | Name | DEM |
+| --- | --- | --- |
+| Transect_1 | Profil 1a | DEM |
+| Transect_1 | Profil 1b | DEM geglättet |
+| Transect_2 | Profil 2 | DEM geglättet |
+| Eigene Linie | Profil 3 | DEM geglättet |
 
 
 ### Aufgabe 3: Reliefanalysen
