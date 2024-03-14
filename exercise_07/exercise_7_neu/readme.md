@@ -51,10 +51,8 @@ Hier eine Übersicht über die Profile, die ihr erstellen könnt.
   * Schaut euch die Werte an. Was zeigen uns die Zahlen?
   * Was ist die maximale Hangneigung pro Nationalpark?
   * Wie hoch ist die durchschnittliche Hangneigung pro Nationalpark?
-
 * Selektiert besonders steile Regionen (>30°) (nutzt dazu das **Reclassify Tool**)
 * Konvertiert die Auswahl ins Vektorformat (**Conversion - Raster to Vector**). Anschließend kannst du das **Basic statistic per field** nutzen.
-
 
 
 Das könnte dann ungefähr so aussehen:
