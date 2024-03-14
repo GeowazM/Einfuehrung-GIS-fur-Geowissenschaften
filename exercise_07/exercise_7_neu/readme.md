@@ -34,6 +34,8 @@ Ladet euch die Daten vom USB-Stick und speichert sie auf eurem PC. Legt einen lo
 * Jetzt erstelle ein Höhenprofil mit dem Transect_2 Layer und exportiere dies ebenfalls (bspw. Profil_3).
 * Kreiere eine eigene Linie (**Layer - Create layer**),  visualisiere damit ein Höhenprofil und speichere dies (Profil 3).
 
+Das Profil des Transect_1-Layer müsste so aussehen:
+![profile](profil_noerdlinger_ries.png)
 
 Hier eine Übersicht über die Profile, die ihr erstellen könnt.
 | Vektorlayer | Beispielname | DEM |
@@ -44,9 +46,14 @@ Hier eine Übersicht über die Profile, die ihr erstellen könnt.
 | Eigene Linie | Profil_3.png | DEM geglättet |
 
 
-### Aufgabe 3: Reliefanalysen
+
+
+### Aufgabe 3: Das Relief analysieren und visualisieren
 * Berechnet zunächst eine Schummerung (via **Hillshade**) für das Geländemodell. Tipp: Nutze die Processing - Toolbox, um Funktionen zu finden.
 * Ermittelt die Hangneigung in ° (via **Slope**).
+* Selektiert besonders steile Regionen (>30°) (nutzt dazu das **Reclassify Tool**)
+
+
 * Erstellt Übersichtsstatistiken für die beiden Nationalparks (bspw. mit Hilfe von **Zonal Statistics**).
   * Schaut euch die Werte an. Was zeigen uns die Zahlen?
   * Was ist die maximale Hangneigung pro Nationalpark?
@@ -55,5 +62,4 @@ Hier eine Übersicht über die Profile, die ihr erstellen könnt.
 * Konvertiert die Auswahl ins Vektorformat (**Conversion - Raster to Vector**). Anschließend kannst du das **Basic statistic per field** nutzen.
 
 
-Das könnte dann ungefähr so aussehen:
-![profile](profil_noerdlinger_ries.png)
+
