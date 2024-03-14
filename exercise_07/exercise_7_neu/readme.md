@@ -18,6 +18,7 @@ Ladet euch die Daten vom USB-Stick und speichert sie auf eurem PC. Legt einen lo
 * Raster-Layer: SRTM Höhendaten (Quelle: NASA JPL (2013). NASA Shuttle Radar Topography Mission Global 1 arc second. Accessed 2024-03-14 from https://doi.org/10.5067/MEaSUREs/SRTM/SRTMGL1.003 )
 
 ## Aufgaben
+In dieser Aufgabe schauen wir uns das Nördlinger Ries genauer an. Verschaffe dir einen ersten Eindruck über den UNESCO Global Geopark Ries [hier](https://www.geopark-ries.de/geologie/). Ein kleines Video zu den Besonderheiten des Nördlinger Ries findet ihr [hier](https://www.youtube.com/watch?v=YPRzwbnE6kI)
 ### Aufgabe 1: Vorbereitung des DEM (Digital Elevation Model)
 * Verschmelzt die SRTM-Kacheln (SRTMGL1) miteinander (z.B. via **Merge**).
 * Bringt das Höhenmodell in eine passende **metrische Projektion** (z.B. WGS 84 / UTM 32N).
