@@ -12,7 +12,7 @@ Ladet euch [die Daten herunter](exercise_5a_data_iceland.zip) und speichert sie 
 * Landsat 9 Daten (Quelle: Landsat-9 image from 17.07.2023 of the U.S. Geological Survey via [USGS EarthExplorer](https://earthexplorer.usgs.gov/))
 
 ## Aufgabe
-### Wir sehen eine Landsat 9 Aufnahme vom 17.07.2023. Darauf zu sehen ist ein Eruptionsereignis. Wir wollen herausfinden, wie groß die von Lava überflossene Fläche ist.
+*In den Daten findet ihr eine Landsat 9 Satellitenbildaufnahme, die am 17.07.2023 aufgenommen wurde. Wir wollen herausfinden, wie groß die von Lava überflossene Fläche ist.*
 
 1. Erstellt zwei neue Layer: Einen für (a) die Lavafläche und einen zweiten (b) für die Straßen.
 2. Fügt zu jedem Layer ein Attribute "Name" hinzu.
