@@ -8,7 +8,7 @@
 * [Digitalisieren](https://courses.gistools.geog.uni-heidelberg.de/giscience/gis-einfuehrung/wikis/qgis-Digitalisierung)
 
 ## Daten
-Ladet euch [die Daten herunter](exercise_05a_data_iceland.zip) und speichert sie auf eurem PC. Legt einen lokalen Ordner an und speichert dort die obigen Daten. (.zip Ordner müssen vorher entpackt werden.)
+Ladet euch [die Daten herunter](exercise_5a_data_iceland.zip) und speichert sie auf eurem PC. Legt einen lokalen Ordner an und speichert dort die obigen Daten. (.zip Ordner müssen vorher entpackt werden.)
 * Landsat 9 Daten (Quelle: Landsat-9 image from 17.07.2023 of the U.S. Geological Survey via [USGS EarthExplorer](https://earthexplorer.usgs.gov/))
 
 ## Aufgabe
