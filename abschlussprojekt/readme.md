@@ -63,3 +63,20 @@ Der Leser sollte in der Lage sein, die Analyse anhand dieses Dokumentes inhaltli
 ### 5. Dokumentiert euer Vorgehen schriftlich in knapper Form
 * Das Dokument sollte circa 2 Seiten umfassen (+- 10%)
 * Die Ausarbeitung ist die Basis für die Bewertung
+
+
+### Zur Orientierung der Benotung
+| Prozentpunkte      | Note      |
+| ------------- | ------------- |
+| >=95 | 1,0 |
+| >=90 - <95 | 1,3 |
+| >=85 - <90 | 1,7 |
+| >=80 - <85 | 2,0 |
+| >=75 - <80 | 2,3 |
+| >=70 - <75 | 2,7 |
+| >=65 - <70 | 3,0 |
+| >=60 - <65 | 3,3 |
+| >=55 - <60 | 3,7 |
+| >=50 - <55 | 4,0 |
+
+
