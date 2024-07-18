@@ -29,8 +29,7 @@ Anhand der Übungen lernt ihr,**wie** ihr praktisch vorgeht. Ihr versteht **waru
 | 2         	| [Eine Karte erstellen](https://github.com/GeowazM/Einfuehrung-GIS-fur-Geowissenschaften/tree/main/exercise_02)         |
 | 3         	| [Vektor - Mit Attributtabellen arbeiten](https://github.com/GeowazM/Einfuehrung-GIS-fur-Geowissenschaften/tree/main/exercise_03)         |
 | 4         	| [Vektor - Räumliche Abfrage nutzen](https://github.com/GeowazM/Einfuehrung-GIS-fur-Geowissenschaften/tree/main/exercise_04)         |
-| 5a         	| [Digitalisieren](https://github.com/GeowazM/Einfuehrung-GIS-fur-Geowissenschaften/tree/main/exercise_05a)         |
-| 5b         	| [Georeferenzieren](https://github.com/GeowazM/Einfuehrung-GIS-fur-Geowissenschaften/tree/main/exercise_05b)         |
+| 5a         	| [Digitalisieren](https://github.com/GeowazM/Einfuehrung-GIS-fur-Geowissenschaften/tree/main/exercise_05)         |
 | 6         	| [Raster - Klassifizierung von Sentinel-2 Daten & 3D Visualisierungen](https://github.com/GeowazM/Einfuehrung-GIS-fur-Geowissenschaften/tree/main/exercise_06)         |
 | 7         	| [Raster - Digitale Geländemodelle nutzen](https://github.com/GeowazM/Einfuehrung-GIS-fur-Geowissenschaften/tree/main/exercise_07)       |
 | 8         	| [Räumliche Interpolation durchführen](https://github.com/GeowazM/Einfuehrung-GIS-fur-Geowissenschaften/tree/main/exercise_08)         |
