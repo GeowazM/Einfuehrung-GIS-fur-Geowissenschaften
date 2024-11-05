@@ -43,3 +43,9 @@ Anhand der Übungen lernt ihr,**wie** ihr praktisch vorgeht. Ihr versteht **waru
 **WICHTIG:**
 * Die Abgabe des Abschlussprojekts erfolgt ausschließlich per Mail. Achtet darauf, dass ein anderer Nutzer dein QGIS Projekt mit allen Layern öffnen kann. 
 * Die aus der Gesamt-Punktzahl resultierende Note wird dem Prüfungssekretariat gemeldet.
+
+
+Links:
+* https://www.geotis.de/geotisapp/geotis.php
+* https://www.nlog.nl/southern-permian-basin-atlas
+* https://nibis.lbeg.de/cardomap3/
