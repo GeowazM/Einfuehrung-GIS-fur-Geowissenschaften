@@ -1,0 +1,1179 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="initial-scale=1,user-scalable=no,maximum-scale=1,width=device-width">
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <link rel="stylesheet" href="css/leaflet.css">
+        <link rel="stylesheet" href="css/L.Control.Layers.Tree.css">
+        <link rel="stylesheet" href="css/qgis2web.css">
+        <link rel="stylesheet" href="css/fontawesome-all.min.css">
+        <style>
+        html, body, #map {
+            width: 100%;
+            height: 100%;
+            padding: 0;
+            margin: 0;
+        }
+        </style>
+        <title>Erdbeben und Platten der Welt</title>
+    </head>
+    <body>
+        <div id="map">
+        </div>
+        <script src="js/qgis2web_expressions.js"></script>
+        <script src="js/leaflet.js"></script>
+        <script src="js/L.Control.Layers.Tree.min.js"></script>
+        <script src="js/leaflet.rotatedMarker.js"></script>
+        <script src="js/leaflet.pattern.js"></script>
+        <script src="js/leaflet-hash.js"></script>
+        <script src="js/Autolinker.min.js"></script>
+        <script src="js/rbush.min.js"></script>
+        <script src="js/labelgun.min.js"></script>
+        <script src="js/labels.js"></script>
+        <script src="js/leaflet.wms.js"></script>
+        <script src="data/Platten_5.js"></script>
+        <script src="data/Plattengrenzen_6.js"></script>
+        <script src="data/USErdbebenwacheUSGS19602024_7.js"></script>
+        <script>
+        var map = L.map('map', {
+            zoomControl:false, maxZoom:13, minZoom:2
+        }).fitBounds([[-81.22933587568589,-99.87097898618256],[75.47606450101092,172.35153158472005]]);
+        var hash = new L.Hash(map);
+        map.attributionControl.setPrefix('<a href="https://www.usgs.gov/programs/earthquake-hazards/earthquakes">USGS Earthquakes</a> &middot; <a href="https://github.com/fraxen/tectonicplates">Tektonische Platten</a> &middot; <a href="https://geoservice.dlr.de/web/datasets">DLR EOC</a> &middot; <a href="https://www.gebco.net/data_and_products/gebco_web_services/">GEBCO</a> &middot; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> &middot; <a href="https://github.com/tomchadwin/qgis2web" target="_blank">qgis2web</a> &middot; <a href="https://leafletjs.com" title="A JS library for interactive maps">Leaflet</a> &middot; <a href="https://qgis.org">QGIS</a>');
+        var autolinker = new Autolinker({truncate: {length: 30, location: 'smart'}});
+        // remove popup's row if "visible-with-data"
+        function removeEmptyRowsFromPopupContent(content, feature) {
+         var tempDiv = document.createElement('div');
+         tempDiv.innerHTML = content;
+         var rows = tempDiv.querySelectorAll('tr');
+         for (var i = 0; i < rows.length; i++) {
+             var td = rows[i].querySelector('td.visible-with-data');
+             var key = td ? td.id : '';
+             if (td && td.classList.contains('visible-with-data') && feature.properties[key] == null) {
+                 rows[i].parentNode.removeChild(rows[i]);
+             }
+         }
+         return tempDiv.innerHTML;
+        }
+        // add class to format popup if it contains media
+		function addClassToPopupIfMedia(content, popup) {
+			var tempDiv = document.createElement('div');
+			tempDiv.innerHTML = content;
+			if (tempDiv.querySelector('td img')) {
+				popup._contentNode.classList.add('media');
+					// Delay to force the redraw
+					setTimeout(function() {
+						popup.update();
+					}, 10);
+			} else {
+				popup._contentNode.classList.remove('media');
+			}
+		}
+        var title = new L.Control({'position':'bottomleft'});
+        title.onAdd = function (map) {
+            this._div = L.DomUtil.create('div', 'info');
+            this.update();
+            return this._div;
+        };
+        title.update = function () {
+            this._div.innerHTML = '<h2>Starke Erdbeben zwischen 1960 und 2024</h2>';
+        };
+        title.addTo(map);
+        var abstract = new L.Control({'position':'bottomright'});
+        abstract.onAdd = function (map) {
+            this._div = L.DomUtil.create('div',
+            'leaflet-control abstract');
+            this._div.id = 'abstract'
+
+                abstract.show();
+                return this._div;
+            };
+            abstract.show = function () {
+                this._div.classList.remove("abstract");
+                this._div.classList.add("abstractUncollapsed");
+                this._div.innerHTML = 'Eine interaktive Karte zu Erdbeben zwischen 1960 und 2024, die eine Magnitude größer bzw. gleich 8 nach USGS Earthquake Hazard Program aufwiesen. Zusätzlich sind Geodaten zu Platten und Plattengerenzen vorhanden.';
+        };
+        abstract.addTo(map);
+        var zoomControl = L.control.zoom({
+            position: 'topleft'
+        }).addTo(map);
+        var bounds_group = new L.featureGroup([]);
+        function setBounds() {
+        }
+        map.createPane('pane_OpenStreetMap_0');
+        map.getPane('pane_OpenStreetMap_0').style.zIndex = 400;
+        var layer_OpenStreetMap_0 = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            pane: 'pane_OpenStreetMap_0',
+            opacity: 1.0,
+            attribution: '',
+            minZoom: 2,
+            maxZoom: 13,
+            minNativeZoom: 0,
+            maxNativeZoom: 19
+        });
+        layer_OpenStreetMap_0;
+        map.createPane('pane_GEBCODGM_1');
+        map.getPane('pane_GEBCODGM_1').style.zIndex = 401;
+        var layer_GEBCODGM_1 = L.WMS.layer("https://wms.gebco.net/mapserv", "GEBCO_LATEST_2", {
+            pane: 'pane_GEBCODGM_1',
+            format: 'image/png',
+            uppercase: true,
+            transparent: true,
+            continuousWorld : true,
+            tiled: true,
+            info_format: 'text/html',
+            opacity: 1,
+            identify: false,
+            attribution: '',
+        });
+        map.createPane('pane_BlueMarbleDLREOC_2');
+        map.getPane('pane_BlueMarbleDLREOC_2').style.zIndex = 402;
+        var layer_BlueMarbleDLREOC_2 = L.WMS.layer("https://geoservice.dlr.de/eoc/basemap/wms", "blue_marble:blue_marble", {
+            pane: 'pane_BlueMarbleDLREOC_2',
+            format: 'image/png',
+            uppercase: true,
+            transparent: true,
+            continuousWorld : true,
+            tiled: true,
+            info_format: 'text/html',
+            opacity: 1,
+            identify: false,
+            attribution: '',
+        });
+        map.createPane('pane_BasemapDLREOC_3');
+        map.getPane('pane_BasemapDLREOC_3').style.zIndex = 403;
+        var layer_BasemapDLREOC_3 = L.WMS.layer("https://geoservice.dlr.de/eoc/basemap/wms", "basemap", {
+            pane: 'pane_BasemapDLREOC_3',
+            format: 'image/png',
+            uppercase: true,
+            transparent: true,
+            continuousWorld : true,
+            tiled: true,
+            info_format: 'text/html',
+            opacity: 1,
+            identify: false,
+            attribution: '',
+        });
+        map.addLayer(layer_BasemapDLREOC_3);
+        map.createPane('pane_WorldSettlementFootprintWSF2019DLREOC_4');
+        map.getPane('pane_WorldSettlementFootprintWSF2019DLREOC_4').style.zIndex = 404;
+        var layer_WorldSettlementFootprintWSF2019DLREOC_4 = L.WMS.layer("https://geoservice.dlr.de/eoc/land/wms", "WSF_2019", {
+            pane: 'pane_WorldSettlementFootprintWSF2019DLREOC_4',
+            format: 'image/png',
+            uppercase: true,
+            transparent: true,
+            continuousWorld : true,
+            tiled: true,
+            info_format: 'text/html',
+            opacity: 1,
+            identify: false,
+            attribution: '',
+        });
+        function pop_Platten_5(feature, layer) {
+            var popupContent = '<table>\
+                    <tr>\
+                        <th scope="row">Name</th>\
+                        <td>' + (feature.properties['PlateName'] !== null ? autolinker.link(feature.properties['PlateName'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                </table>';
+            var content = removeEmptyRowsFromPopupContent(popupContent, feature);
+			layer.on('popupopen', function(e) {
+				addClassToPopupIfMedia(content, e.popup);
+			});
+			layer.bindPopup(content, { maxHeight: 400 });
+        }
+
+        function style_Platten_5_0(feature) {
+            switch(String(feature.properties['PlateName'])) {
+                case 'Aegean Sea':
+                    return {
+                pane: 'pane_Platten_5',
+                opacity: 1,
+                color: 'rgba(35,35,35,0.5)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(115,204,21,0.5)',
+                interactive: true,
+            }
+                    break;
+                case 'Africa':
+                    return {
+                pane: 'pane_Platten_5',
+                opacity: 1,
+                color: 'rgba(35,35,35,0.5)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(194,58,215,0.5)',
+                interactive: true,
+            }
+                    break;
+                case 'Altiplano':
+                    return {
+                pane: 'pane_Platten_5',
+                opacity: 1,
+                color: 'rgba(35,35,35,0.5)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(58,137,221,0.5)',
+                interactive: true,
+            }
+                    break;
+                case 'Amur':
+                    return {
+                pane: 'pane_Platten_5',
+                opacity: 1,
+                color: 'rgba(35,35,35,0.5)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(178,105,221,0.5)',
+                interactive: true,
+            }
+                    break;
+                case 'Anatolia':
+                    return {
+                pane: 'pane_Platten_5',
+                opacity: 1,
+                color: 'rgba(35,35,35,0.5)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(135,170,225,0.5)',
+                interactive: true,
+            }
+                    break;
+                case 'Antarctica':
+                    return {
+                pane: 'pane_Platten_5',
+                opacity: 1,
+                color: 'rgba(35,35,35,0.5)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(20,207,92,0.5)',
+                interactive: true,
+            }
+                    break;
+                case 'Arabia':
+                    return {
+                pane: 'pane_Platten_5',
+                opacity: 1,
+                color: 'rgba(35,35,35,0.5)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(233,75,183,0.5)',
+                interactive: true,
+            }
+                    break;
+                case 'Australia':
+                    return {
+                pane: 'pane_Platten_5',
+                opacity: 1,
+                color: 'rgba(35,35,35,0.5)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(181,213,76,0.5)',
+                interactive: true,
+            }
+                    break;
+                case 'Balmoral Reef':
+                    return {
+                pane: 'pane_Platten_5',
+                opacity: 1,
+                color: 'rgba(35,35,35,0.5)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(127,240,157,0.5)',
+                interactive: true,
+            }
+                    break;
+                case 'Banda Sea':
+                    return {
+                pane: 'pane_Platten_5',
+                opacity: 1,
+                color: 'rgba(35,35,35,0.5)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(230,56,37,0.5)',
+                interactive: true,
+            }
+                    break;
+                case 'Birds Head':
+                    return {
+                pane: 'pane_Platten_5',
+                opacity: 1,
+                color: 'rgba(35,35,35,0.5)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(179,200,24,0.5)',
+                interactive: true,
+            }
+                    break;
+                case 'Burma':
+                    return {
+                pane: 'pane_Platten_5',
+                opacity: 1,
+                color: 'rgba(35,35,35,0.5)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(68,57,226,0.5)',
+                interactive: true,
+            }
+                    break;
+                case 'Caribbean':
+                    return {
+                pane: 'pane_Platten_5',
+                opacity: 1,
+                color: 'rgba(35,35,35,0.5)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(192,67,234,0.5)',
+                interactive: true,
+            }
+                    break;
+                case 'Caroline':
+                    return {
+                pane: 'pane_Platten_5',
+                opacity: 1,
+                color: 'rgba(35,35,35,0.5)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(202,120,158,0.5)',
+                interactive: true,
+            }
+                    break;
+                case 'Cocos':
+                    return {
+                pane: 'pane_Platten_5',
+                opacity: 1,
+                color: 'rgba(35,35,35,0.5)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(213,62,216,0.5)',
+                interactive: true,
+            }
+                    break;
+                case 'Conway Reef':
+                    return {
+                pane: 'pane_Platten_5',
+                opacity: 1,
+                color: 'rgba(35,35,35,0.5)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(31,81,219,0.5)',
+                interactive: true,
+            }
+                    break;
+                case 'Easter':
+                    return {
+                pane: 'pane_Platten_5',
+                opacity: 1,
+                color: 'rgba(35,35,35,0.5)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(79,215,48,0.5)',
+                interactive: true,
+            }
+                    break;
+                case 'Eurasia':
+                    return {
+                pane: 'pane_Platten_5',
+                opacity: 1,
+                color: 'rgba(35,35,35,0.5)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(154,69,234,0.5)',
+                interactive: true,
+            }
+                    break;
+                case 'Futuna':
+                    return {
+                pane: 'pane_Platten_5',
+                opacity: 1,
+                color: 'rgba(35,35,35,0.5)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(120,209,133,0.5)',
+                interactive: true,
+            }
+                    break;
+                case 'Galapagos':
+                    return {
+                pane: 'pane_Platten_5',
+                opacity: 1,
+                color: 'rgba(35,35,35,0.5)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(80,192,236,0.5)',
+                interactive: true,
+            }
+                    break;
+                case 'India':
+                    return {
+                pane: 'pane_Platten_5',
+                opacity: 1,
+                color: 'rgba(35,35,35,0.5)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(221,221,98,0.5)',
+                interactive: true,
+            }
+                    break;
+                case 'Juan de Fuca':
+                    return {
+                pane: 'pane_Platten_5',
+                opacity: 1,
+                color: 'rgba(35,35,35,0.5)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(212,37,177,0.5)',
+                interactive: true,
+            }
+                    break;
+                case 'Juan Fernandez':
+                    return {
+                pane: 'pane_Platten_5',
+                opacity: 1,
+                color: 'rgba(35,35,35,0.5)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(208,16,61,0.5)',
+                interactive: true,
+            }
+                    break;
+                case 'Kermadec':
+                    return {
+                pane: 'pane_Platten_5',
+                opacity: 1,
+                color: 'rgba(35,35,35,0.5)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(28,147,227,0.5)',
+                interactive: true,
+            }
+                    break;
+                case 'Manus':
+                    return {
+                pane: 'pane_Platten_5',
+                opacity: 1,
+                color: 'rgba(35,35,35,0.5)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(211,198,85,0.5)',
+                interactive: true,
+            }
+                    break;
+                case 'Maoke':
+                    return {
+                pane: 'pane_Platten_5',
+                opacity: 1,
+                color: 'rgba(35,35,35,0.5)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(116,214,186,0.5)',
+                interactive: true,
+            }
+                    break;
+                case 'Mariana':
+                    return {
+                pane: 'pane_Platten_5',
+                opacity: 1,
+                color: 'rgba(35,35,35,0.5)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(159,237,125,0.5)',
+                interactive: true,
+            }
+                    break;
+                case 'Molucca Sea':
+                    return {
+                pane: 'pane_Platten_5',
+                opacity: 1,
+                color: 'rgba(35,35,35,0.5)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(232,78,35,0.5)',
+                interactive: true,
+            }
+                    break;
+                case 'Nazca':
+                    return {
+                pane: 'pane_Platten_5',
+                opacity: 1,
+                color: 'rgba(35,35,35,0.5)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(179,228,94,0.5)',
+                interactive: true,
+            }
+                    break;
+                case 'New Hebrides':
+                    return {
+                pane: 'pane_Platten_5',
+                opacity: 1,
+                color: 'rgba(35,35,35,0.5)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(80,223,85,0.5)',
+                interactive: true,
+            }
+                    break;
+                case 'Niuafo\'ou':
+                    return {
+                pane: 'pane_Platten_5',
+                opacity: 1,
+                color: 'rgba(35,35,35,0.5)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(133,232,126,0.5)',
+                interactive: true,
+            }
+                    break;
+                case 'North America':
+                    return {
+                pane: 'pane_Platten_5',
+                opacity: 1,
+                color: 'rgba(35,35,35,0.5)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(221,190,80,0.5)',
+                interactive: true,
+            }
+                    break;
+                case 'North Andes':
+                    return {
+                pane: 'pane_Platten_5',
+                opacity: 1,
+                color: 'rgba(35,35,35,0.5)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(220,159,37,0.5)',
+                interactive: true,
+            }
+                    break;
+                case 'North Bismarck':
+                    return {
+                pane: 'pane_Platten_5',
+                opacity: 1,
+                color: 'rgba(35,35,35,0.5)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(137,222,77,0.5)',
+                interactive: true,
+            }
+                    break;
+                case 'Okhotsk':
+                    return {
+                pane: 'pane_Platten_5',
+                opacity: 1,
+                color: 'rgba(35,35,35,0.5)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(128,232,191,0.5)',
+                interactive: true,
+            }
+                    break;
+                case 'Okinawa':
+                    return {
+                pane: 'pane_Platten_5',
+                opacity: 1,
+                color: 'rgba(35,35,35,0.5)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(206,139,106,0.5)',
+                interactive: true,
+            }
+                    break;
+                case 'Pacific':
+                    return {
+                pane: 'pane_Platten_5',
+                opacity: 1,
+                color: 'rgba(35,35,35,0.5)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(56,209,201,0.5)',
+                interactive: true,
+            }
+                    break;
+                case 'Panama':
+                    return {
+                pane: 'pane_Platten_5',
+                opacity: 1,
+                color: 'rgba(35,35,35,0.5)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(218,158,109,0.5)',
+                interactive: true,
+            }
+                    break;
+                case 'Philippine Sea':
+                    return {
+                pane: 'pane_Platten_5',
+                opacity: 1,
+                color: 'rgba(35,35,35,0.5)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(236,44,153,0.5)',
+                interactive: true,
+            }
+                    break;
+                case 'Rivera':
+                    return {
+                pane: 'pane_Platten_5',
+                opacity: 1,
+                color: 'rgba(35,35,35,0.5)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(145,106,234,0.5)',
+                interactive: true,
+            }
+                    break;
+                case 'Sandwich':
+                    return {
+                pane: 'pane_Platten_5',
+                opacity: 1,
+                color: 'rgba(35,35,35,0.5)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(40,232,200,0.5)',
+                interactive: true,
+            }
+                    break;
+                case 'Scotia':
+                    return {
+                pane: 'pane_Platten_5',
+                opacity: 1,
+                color: 'rgba(35,35,35,0.5)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(124,204,208,0.5)',
+                interactive: true,
+            }
+                    break;
+                case 'Shetland':
+                    return {
+                pane: 'pane_Platten_5',
+                opacity: 1,
+                color: 'rgba(35,35,35,0.5)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(41,69,226,0.5)',
+                interactive: true,
+            }
+                    break;
+                case 'Solomon Sea':
+                    return {
+                pane: 'pane_Platten_5',
+                opacity: 1,
+                color: 'rgba(35,35,35,0.5)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(220,53,206,0.5)',
+                interactive: true,
+            }
+                    break;
+                case 'Somalia':
+                    return {
+                pane: 'pane_Platten_5',
+                opacity: 1,
+                color: 'rgba(35,35,35,0.5)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(208,17,39,0.5)',
+                interactive: true,
+            }
+                    break;
+                case 'South America':
+                    return {
+                pane: 'pane_Platten_5',
+                opacity: 1,
+                color: 'rgba(35,35,35,0.5)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(231,104,104,0.5)',
+                interactive: true,
+            }
+                    break;
+                case 'South Bismarck':
+                    return {
+                pane: 'pane_Platten_5',
+                opacity: 1,
+                color: 'rgba(35,35,35,0.5)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(126,106,212,0.5)',
+                interactive: true,
+            }
+                    break;
+                case 'Sunda':
+                    return {
+                pane: 'pane_Platten_5',
+                opacity: 1,
+                color: 'rgba(35,35,35,0.5)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(110,32,218,0.5)',
+                interactive: true,
+            }
+                    break;
+                case 'Timor':
+                    return {
+                pane: 'pane_Platten_5',
+                opacity: 1,
+                color: 'rgba(35,35,35,0.5)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(218,110,148,0.5)',
+                interactive: true,
+            }
+                    break;
+                case 'Tonga':
+                    return {
+                pane: 'pane_Platten_5',
+                opacity: 1,
+                color: 'rgba(35,35,35,0.5)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(103,231,167,0.5)',
+                interactive: true,
+            }
+                    break;
+                case 'Woodlark':
+                    return {
+                pane: 'pane_Platten_5',
+                opacity: 1,
+                color: 'rgba(35,35,35,0.5)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(38,43,205,0.5)',
+                interactive: true,
+            }
+                    break;
+                case 'Yangtze':
+                    return {
+                pane: 'pane_Platten_5',
+                opacity: 1,
+                color: 'rgba(35,35,35,0.5)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(134,216,232,0.5)',
+                interactive: true,
+            }
+                    break;
+            }
+        }
+        map.createPane('pane_Platten_5');
+        map.getPane('pane_Platten_5').style.zIndex = 405;
+        map.getPane('pane_Platten_5').style['mix-blend-mode'] = 'normal';
+        var layer_Platten_5 = new L.geoJson(json_Platten_5, {
+            attribution: '',
+            interactive: true,
+            dataVar: 'json_Platten_5',
+            layerName: 'layer_Platten_5',
+            pane: 'pane_Platten_5',
+            onEachFeature: pop_Platten_5,
+            style: style_Platten_5_0,
+        });
+        bounds_group.addLayer(layer_Platten_5);
+        function pop_Plattengrenzen_6(feature, layer) {
+            var popupContent = '<table>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['LAYER'] !== null ? autolinker.link(feature.properties['LAYER'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['Name'] !== null ? autolinker.link(feature.properties['Name'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['Source'] !== null ? autolinker.link(feature.properties['Source'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['PlateA'] !== null ? autolinker.link(feature.properties['PlateA'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['PlateB'] !== null ? autolinker.link(feature.properties['PlateB'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">Type</th>\
+                        <td class="visible-with-data" id="Type">' + (feature.properties['Type'] !== null ? autolinker.link(feature.properties['Type'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                </table>';
+            var content = removeEmptyRowsFromPopupContent(popupContent, feature);
+			layer.on('popupopen', function(e) {
+				addClassToPopupIfMedia(content, e.popup);
+			});
+			layer.bindPopup(content, { maxHeight: 400 });
+        }
+
+        function style_Plattengrenzen_6_0() {
+            return {
+                pane: 'pane_Plattengrenzen_6',
+                opacity: 1,
+                color: 'rgba(183,72,75,1.0)',
+                dashArray: '',
+                lineCap: 'square',
+                lineJoin: 'bevel',
+                weight: 1.0,
+                fillOpacity: 0,
+                interactive: false,
+            }
+        }
+        map.createPane('pane_Plattengrenzen_6');
+        map.getPane('pane_Plattengrenzen_6').style.zIndex = 406;
+        map.getPane('pane_Plattengrenzen_6').style['mix-blend-mode'] = 'normal';
+        var layer_Plattengrenzen_6 = new L.geoJson(json_Plattengrenzen_6, {
+            attribution: '',
+            interactive: false,
+            dataVar: 'json_Plattengrenzen_6',
+            layerName: 'layer_Plattengrenzen_6',
+            pane: 'pane_Plattengrenzen_6',
+            onEachFeature: pop_Plattengrenzen_6,
+            style: style_Plattengrenzen_6_0,
+        });
+        bounds_group.addLayer(layer_Plattengrenzen_6);
+        function pop_USErdbebenwacheUSGS19602024_7(feature, layer) {
+            var popupContent = '<table>\
+                    <tr>\
+                        <th scope="row">Magnitude</th>\
+                        <td>' + (feature.properties['mag'] !== null ? autolinker.link(feature.properties['mag'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">Ort</th>\
+                        <td>' + (feature.properties['place'] !== null ? autolinker.link(feature.properties['place'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">URL</th>\
+                        <td>' + (feature.properties['url'] !== null ? autolinker.link(feature.properties['url'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">Tsunami</th>\
+                        <td>' + (feature.properties['tsunami'] !== null ? autolinker.link(feature.properties['tsunami'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">Video</th>\
+                        <td>' + (feature.properties['video'] !== null ? autolinker.link(feature.properties['video'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                </table>';
+            var content = removeEmptyRowsFromPopupContent(popupContent, feature);
+			layer.on('popupopen', function(e) {
+				addClassToPopupIfMedia(content, e.popup);
+			});
+			layer.bindPopup(content, { maxHeight: 400 });
+        }
+
+        function style_USErdbebenwacheUSGS19602024_7_0(feature) {
+            if (feature.properties['mag'] >= 8.020000 && feature.properties['mag'] <= 8.140000 ) {
+                return {
+                pane: 'pane_USErdbebenwacheUSGS19602024_7',
+                radius: 4.0,
+                opacity: 1,
+                color: 'rgba(35,35,35,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1,
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(161,30,59,1.0)',
+                interactive: true,
+            }
+            }
+            if (feature.properties['mag'] >= 8.140000 && feature.properties['mag'] <= 8.300000 ) {
+                return {
+                pane: 'pane_USErdbebenwacheUSGS19602024_7',
+                radius: 8.0,
+                opacity: 1,
+                color: 'rgba(35,35,35,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1,
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(161,30,59,1.0)',
+                interactive: true,
+            }
+            }
+            if (feature.properties['mag'] >= 8.300000 && feature.properties['mag'] <= 9.500000 ) {
+                return {
+                pane: 'pane_USErdbebenwacheUSGS19602024_7',
+                radius: 12.000000000000002,
+                opacity: 1,
+                color: 'rgba(35,35,35,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1,
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(161,30,59,1.0)',
+                interactive: true,
+            }
+            }
+        }
+        map.createPane('pane_USErdbebenwacheUSGS19602024_7');
+        map.getPane('pane_USErdbebenwacheUSGS19602024_7').style.zIndex = 407;
+        map.getPane('pane_USErdbebenwacheUSGS19602024_7').style['mix-blend-mode'] = 'normal';
+        var layer_USErdbebenwacheUSGS19602024_7 = new L.geoJson(json_USErdbebenwacheUSGS19602024_7, {
+            attribution: '',
+            interactive: true,
+            dataVar: 'json_USErdbebenwacheUSGS19602024_7',
+            layerName: 'layer_USErdbebenwacheUSGS19602024_7',
+            pane: 'pane_USErdbebenwacheUSGS19602024_7',
+            onEachFeature: pop_USErdbebenwacheUSGS19602024_7,
+            pointToLayer: function (feature, latlng) {
+                var context = {
+                    feature: feature,
+                    variables: {}
+                };
+                return L.circleMarker(latlng, style_USErdbebenwacheUSGS19602024_7_0(feature));
+            },
+        });
+        bounds_group.addLayer(layer_USErdbebenwacheUSGS19602024_7);
+        map.addLayer(layer_USErdbebenwacheUSGS19602024_7);
+        map.createPane('pane_BasemapOverlayDLREOC_8');
+        map.getPane('pane_BasemapOverlayDLREOC_8').style.zIndex = 408;
+        var layer_BasemapOverlayDLREOC_8 = L.WMS.layer("https://geoservice.dlr.de/eoc/basemap/wms", "baseoverlay", {
+            pane: 'pane_BasemapOverlayDLREOC_8',
+            format: 'image/png',
+            uppercase: true,
+            transparent: true,
+            continuousWorld : true,
+            tiled: true,
+            info_format: 'text/html',
+            opacity: 1,
+            identify: false,
+            attribution: '',
+        });
+        map.addLayer(layer_BasemapOverlayDLREOC_8);
+        var overlaysTree = [
+            {label: "Basemap Overlay (DLR EOC)", layer: layer_BasemapOverlayDLREOC_8},
+            {label: 'US-Erdbebenwache (USGS) 1960-2024<br /><table><tr><td style="text-align: center;"><img src="legend/USErdbebenwacheUSGS19602024_7_8028140.png" /></td><td>8.02 - 8.14</td></tr><tr><td style="text-align: center;"><img src="legend/USErdbebenwacheUSGS19602024_7_814831.png" /></td><td>8.14 - 8.3</td></tr><tr><td style="text-align: center;"><img src="legend/USErdbebenwacheUSGS19602024_7_83952.png" /></td><td>8.3 - 9.5</td></tr></table>', layer: layer_USErdbebenwacheUSGS19602024_7},
+            {label: '<img src="legend/Plattengrenzen_6.png" /> Plattengrenzen', layer: layer_Plattengrenzen_6},
+            {label: 'Tektonische Platten', layer: layer_Platten_5},
+            {label: "World Settlement Footprint (WSF) 2019 (DLR EOC)", layer: layer_WorldSettlementFootprintWSF2019DLREOC_4},
+            {label: "Basemap (DLR EOC)", layer: layer_BasemapDLREOC_3, radioGroup: 'bm' },
+            {label: "Blue Marble (DLR EOC)", layer: layer_BlueMarbleDLREOC_2, radioGroup: 'bm' },
+            {label: "GEBCO DGM", layer: layer_GEBCODGM_1, radioGroup: 'bm' },
+            {label: "OpenStreetMap", layer: layer_OpenStreetMap_0, radioGroup: 'bm' },]
+        var lay = L.control.layers.tree(null, overlaysTree,{
+            //namedToggle: true,
+            //selectorBack: false,
+            //closedSymbol: '&#8862; &#x1f5c0;',
+            //openedSymbol: '&#8863; &#x1f5c1;',
+            //collapseAll: 'Collapse all',
+            //expandAll: 'Expand all',
+            collapsed: true,
+        });
+        lay.addTo(map);
+        setBounds();
+        </script>
+    </body>
+</html>
